@@ -1,0 +1,115 @@
+/* ===================================================
+   ANIMATIONS.CSS — Keyframes, scroll reveals, effects
+   =================================================== */
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(30px, -30px) scale(1.05); }
+    50% { transform: translate(-20px, 20px) scale(0.95); }
+    75% { transform: translate(20px, 10px) scale(1.02); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInScale {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+@keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.3); }
+    50% { box-shadow: 0 0 20px 5px rgba(99, 102, 241, 0.15); }
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+}
+.hero-badge.fade-in { animation-delay: 0.2s; }
+.hero-title.fade-in { animation-delay: 0.4s; }
+.hero-subtitle.fade-in { animation-delay: 0.6s; }
+.hero-stats.fade-in { animation-delay: 0.8s; }
+.hero-actions.fade-in { animation-delay: 1s; }
+
+.lesson-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease,
+                background var(--transition-base),
+                border-color var(--transition-base),
+                box-shadow var(--transition-base);
+}
+.lesson-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.lesson-card:hover .lesson-icon {
+    transform: scale(1.15);
+    transition: transform var(--transition-base);
+}
+.lesson-icon { transition: transform var(--transition-base); }
+
+.phase-header:hover .phase-icon {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.overview-card, .skill-card, .tip-card {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.5s ease, transform 0.5s ease,
+                background var(--transition-base),
+                border-color var(--transition-base),
+                box-shadow var(--transition-base);
+}
+.overview-card.visible, .skill-card.visible, .tip-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero-title .gradient-text {
+    background-size: 200% auto;
+    animation: shimmer 4s linear infinite;
+}
+
+.modal-overlay.open .modal {
+    animation: fadeInScale 0.3s ease forwards;
+}
+
+.progress-pill.updated {
+    animation: pulseGlow 0.8s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+    .hero-orb { animation: none !important; }
+    html { scroll-behavior: auto; }
+}

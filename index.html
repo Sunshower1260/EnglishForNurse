@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lộ Trình Học Tiếng Anh Y Tá | English for Nurses Roadmap</title>
+    <meta name="description" content="Lộ trình đào tạo tiếng Anh giao tiếp đời thường và chuyên ngành y tế dành cho y tá - từ zero đến giao tiếp thành thạo">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">🏥</span>
+                <span class="logo-text">English <span class="logo-highlight">for Nurses</span></span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#overview" class="nav-link">Tổng Quan</a></li>
+                <li><a href="#daily-english" class="nav-link">Đời Thường</a></li>
+                <li><a href="#medical-english" class="nav-link">Chuyên Ngành</a></li>
+                <li><a href="#study-tips" class="nav-link">Mẹo Học</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="progress-pill" id="progress-pill">
+                    <span class="progress-pill-icon">🔥</span>
+                    <span class="progress-pill-text" id="progress-pill-text">0%</span>
+                </div>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge fade-in">🎓 Lộ Trình Đào Tạo 9 Tháng</div>
+            <h1 class="hero-title fade-in">
+                Tiếng Anh Giao Tiếp<br>
+                <span class="gradient-text">Chuyên Ngành Y Tá</span>
+            </h1>
+            <p class="hero-subtitle fade-in">
+                Từ <strong>zero</strong> đến giao tiếp tự tin với bệnh nhân quốc tế.<br>
+                Lộ trình chi tiết bao gồm <strong>Nghe — Nói — Từ vựng</strong> cho đời thường & chuyên ngành y tế.
+            </p>
+            <div class="hero-stats fade-in">
+                <div class="stat-item">
+                    <span class="stat-number" id="stat-lessons">48</span>
+                    <span class="stat-label">Bài Học</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">9</span>
+                    <span class="stat-label">Tháng</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Kỹ Năng</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Chuyên Mục</span>
+                </div>
+            </div>
+            <div class="hero-actions fade-in">
+                <a href="#daily-english" class="btn btn-primary">
+                    <span>Bắt Đầu Ngay</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#overview" class="btn btn-outline">Xem Tổng Quan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== OVERVIEW SECTION ===== -->
+    <section class="section" id="overview">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">📋 Tổng Quan</div>
+                <h2 class="section-title">Cấu Trúc <span class="gradient-text">Lộ Trình</span></h2>
+                <p class="section-subtitle">Hai chuyên mục song song — học cả đời thường lẫn chuyên ngành để giao tiếp toàn diện</p>
+            </div>
+            <div class="overview-grid">
+                <div class="overview-card overview-card-daily">
+                    <div class="overview-card-icon">🌍</div>
+                    <h3>Tiếng Anh Đời Thường</h3>
+                    <p>Giao tiếp hàng ngày — chào hỏi, mua sắm, du lịch, công việc, và nhiều chủ đề thực tế.</p>
+                    <div class="overview-card-meta">
+                        <span>24 bài học</span>
+                        <span>3 giai đoạn</span>
+                    </div>
+                </div>
+                <div class="overview-card overview-card-medical">
+                    <div class="overview-card-icon">🏥</div>
+                    <h3>Tiếng Anh Y Tế</h3>
+                    <p>Chuyên ngành y tá — bộ phận cơ thể, triệu chứng, giao tiếp với bệnh nhân & bác sĩ.</p>
+                    <div class="overview-card-meta">
+                        <span>24 bài học</span>
+                        <span>3 giai đoạn</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-showcase">
+                <h3 class="skills-title">3 Kỹ Năng Trọng Tâm</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">🎧</div>
+                        <h4>Nghe (Listening)</h4>
+                        <p>Nghe hiểu câu hỏi, hướng dẫn từ bác sĩ, và yêu cầu của bệnh nhân nước ngoài.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🗣️</div>
+                        <h4>Nói (Speaking)</h4>
+                        <p>Phản xạ giao tiếp tự nhiên — hỏi, đáp, hướng dẫn, giải thích bằng tiếng Anh.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">📚</div>
+                        <h4>Từ vựng (Vocabulary)</h4>
+                        <p>Từ vựng thực tế theo chủ đề — đời thường và y tế chuyên ngành.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DAILY ENGLISH SECTION ===== -->
+    <section class="section section-daily" id="daily-english">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge badge-daily">🌍 Phần 1</div>
+                <h2 class="section-title">Tiếng Anh <span class="text-daily">Đời Thường</span></h2>
+                <p class="section-subtitle">Từ bảng chữ cái đến giao tiếp tự tin trong mọi tình huống hàng ngày</p>
+            </div>
+            <div id="daily-phases-container">
+                <!-- Dynamically rendered by renderer.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MEDICAL ENGLISH SECTION ===== -->
+    <section class="section section-medical" id="medical-english">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge badge-medical">🏥 Phần 2</div>
+                <h2 class="section-title">Tiếng Anh <span class="text-medical">Chuyên Ngành Y Tế</span></h2>
+                <p class="section-subtitle">Từ vựng y khoa, giao tiếp với bệnh nhân quốc tế, và xử lý tình huống lâm sàng</p>
+            </div>
+            <div id="medical-phases-container">
+                <!-- Dynamically rendered by renderer.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STUDY TIPS SECTION ===== -->
+    <section class="section" id="study-tips">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">💡 Mẹo Học Tập</div>
+                <h2 class="section-title">Phương Pháp <span class="gradient-text">Học Hiệu Quả</span></h2>
+                <p class="section-subtitle">Những bí quyết giúp bạn tiến bộ nhanh nhất khi tự học tiếng Anh</p>
+            </div>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-number">01</div>
+                    <h4>Học Mỗi Ngày 30-60 Phút</h4>
+                    <p>Dành ít nhất 30 phút mỗi ngày. Tốt hơn là học 30 phút mỗi ngày so với 3 giờ cuối tuần.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">02</div>
+                    <h4>Nghe Nhiều Hơn Đọc</h4>
+                    <p>Nghe podcast, video tiếng Anh y tế mỗi ngày. Tai quen với âm thanh sẽ giúp bạn nói tốt hơn.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">03</div>
+                    <h4>Tập Nói Một Mình</h4>
+                    <p>Đứng trước gương, tự giả lập các tình huống giao tiếp. Ghi âm lại và nghe để sửa phát âm.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">04</div>
+                    <h4>Áp Dụng Ngay Khi Làm Việc</h4>
+                    <p>Thử đặt tên dụng cụ y tế bằng tiếng Anh, nói thầm các câu hướng dẫn khi chăm sóc bệnh nhân.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">05</div>
+                    <h4>Flashcard Từ Vựng</h4>
+                    <p>Dùng Anki hoặc Quizlet để ôn từ vựng. Mỗi tuần học 20-30 từ mới, ôn lại từ cũ hàng ngày.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">06</div>
+                    <h4>Tìm Bạn Luyện Tập</h4>
+                    <p>Tìm đồng nghiệp hoặc bạn học cùng luyện. Thực hành giao tiếp thực tế giúp tiến bộ rất nhanh.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🏥</span>
+                    <span class="logo-text">English <span class="logo-highlight">for Nurses</span></span>
+                </div>
+                <p class="footer-text">Lộ trình đào tạo tiếng Anh giao tiếp và chuyên ngành y tế.<br>Được thiết kế dành riêng cho y tá Việt Nam.</p>
+                <div class="footer-links">
+                    <a href="#daily-english">Đời Thường</a>
+                    <a href="#medical-english">Chuyên Ngành</a>
+                    <a href="#study-tips">Mẹo Học</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 English for Nurses. Made with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== LESSON DETAIL MODAL ===== -->
+    <div class="modal-overlay" id="lesson-modal">
+        <div class="modal">
+            <button class="modal-close" id="modal-close" aria-label="Đóng">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Dynamically rendered by renderer.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-to-top" id="back-to-top" aria-label="Lên đầu trang">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <!-- JS Files -->
+    <script src="js/data-daily.js"></script>
+    <script src="js/data-medical.js"></script>
+    <script src="js/renderer.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
