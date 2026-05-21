@@ -20,199 +20,198 @@ const DAILY_ENGLISH = {
       name: 'Giai đoạn 1: Khởi Đầu',
       duration: 'Tháng 1–3',
       icon: '🌱',
-      description: 'Xây dựng nền tảng phát âm, từ vựng cơ bản và câu giao tiếp đầu tiên.',
-      lessons: [
+        lessons: [
         {
-          id: 'd1', icon: '🔤',
-          title: 'Bảng Chữ Cái & Phát Âm',
-          titleEn: 'Alphabet & Pronunciation',
-          description: 'Học 26 chữ cái, nguyên âm, phụ âm và quy tắc phát âm cơ bản.',
-          duration: '2 tuần', skills: ['listening','speaking','vocabulary'],
-          objectives: ['Phát âm đúng 26 chữ cái','Phân biệt nguyên âm và phụ âm','Đánh vần tên của mình bằng tiếng Anh'],
-          vocabulary: [
-            {en:'Vowel',vi:'Nguyên âm',phonetic:'/ˈvaʊ.əl/'},
-            {en:'Consonant',vi:'Phụ âm',phonetic:'/ˈkɒn.sə.nənt/'},
-            {en:'Alphabet',vi:'Bảng chữ cái',phonetic:'/ˈæl.fə.bet/'},
-            {en:'Spell',vi:'Đánh vần',phonetic:'/spel/'},
-            {en:'Pronounce',vi:'Phát âm',phonetic:'/prəˈnaʊns/'},
-            {en:'Sound',vi:'Âm thanh',phonetic:'/saʊnd/'}
-          ],
-          phrases: [
-            {en:'How do you spell your name?',vi:'Bạn đánh vần tên như thế nào?'},
-            {en:'Can you repeat that, please?',vi:'Bạn có thể nhắc lại không?'},
-            {en:'It sounds like...',vi:'Nghe giống như...'},
-            {en:'Is that correct?',vi:'Như vậy đúng không?'}
-          ],
-          practice: ['Nghe và lặp lại phát âm A-Z mỗi ngày','Đánh vần tên mình và 5 người thân','Ghi âm giọng mình và so sánh với audio gốc'],
-          tip: 'Tập phát âm 15 phút mỗi sáng trước gương. Chú ý hình miệng khi nói.'
-        },
-        {
-          id: 'd2', icon: '👋',
+          id: 'd1', icon: '👋',
           title: 'Chào Hỏi & Xã Giao',
           titleEn: 'Greetings & Social Manners',
           description: 'Các cách chào hỏi lịch sự, hỏi thăm sức khỏe và đáp lại.',
           duration: '2 tuần', skills: ['speaking','listening','vocabulary'],
           objectives: ['Chào hỏi đúng theo thời gian trong ngày','Hỏi thăm và đáp lại lịch sự','Tạm biệt trong nhiều tình huống khác nhau'],
           vocabulary: [
-            {en:'Good morning',vi:'Chào buổi sáng',phonetic:'/ɡʊd ˈmɔː.nɪŋ/'},
-            {en:'Good afternoon',vi:'Chào buổi chiều',phonetic:'/ɡʊd ˌɑːf.tɚˈnuːn/'},
-            {en:'Good evening',vi:'Chào buổi tối',phonetic:'/ɡʊd ˈiːv.nɪŋ/'},
-            {en:'Goodbye',vi:'Tạm biệt',phonetic:'/ˌɡʊdˈbaɪ/'},
-            {en:'Nice to meet you',vi:'Rất vui được gặp bạn',phonetic:'/naɪs tuː miːt juː/'},
-            {en:'See you later',vi:'Hẹn gặp lại',phonetic:'/siː juː ˈleɪ.tər/'}
+            {en: 'Good morning', vi: 'Chào buổi sáng', phonetic: '/ɡʊd ˈmɔː.nɪŋ/'},
+            {en: 'Good afternoon', vi: 'Chào buổi chiều', phonetic: '/ɡʊd ˌɑːf.tɚˈnuːn/'},
+            {en: 'Good evening', vi: 'Chào buổi tối', phonetic: '/ɡʊd ˈiːv.nɪŋ/'},
+            {en: 'Goodbye', vi: 'Tạm biệt', phonetic: '/ˌɡʊdˈbaɪ/'},
+            {en: 'Nice to meet you', vi: 'Rất vui được gặp bạn', phonetic: '/naɪs tuː miːt juː/'},
+            {en: 'See you later', vi: 'Hẹn gặp lại', phonetic: '/siː juː ˈleɪ.tər/'}
           ],
           phrases: [
-            {en:'How are you today?',vi:'Hôm nay bạn khỏe không?'},
-            {en:"I'm fine, thank you. And you?",vi:'Tôi khỏe, cảm ơn. Còn bạn?'},
-            {en:'Have a nice day!',vi:'Chúc bạn ngày tốt lành!'},
-            {en:"It was nice talking to you.",vi:'Rất vui được nói chuyện với bạn.'}
+            {en: 'How are you today?', vi: 'Hôm nay bạn khỏe không?'},
+            {en: "I'm fine, thank you. And you?", vi: 'Tôi khỏe, cảm ơn. Còn bạn?'},
+            {en: 'Have a nice day!', vi: 'Chúc bạn ngày tốt lành!'},
+            {en: "It was nice talking to you.", vi: 'Rất vui được nói chuyện với bạn.'}
           ],
           practice: ['Chào đồng nghiệp bằng tiếng Anh mỗi ngày','Role-play: gặp gỡ người mới','Luyện 10 câu chào theo thời gian trong ngày'],
           tip: 'Mỉm cười khi chào — ngữ điệu thân thiện giúp bạn tự tin hơn nhiều.'
         },
         {
-          id: 'd3', icon: '🙋',
+          id: 'd2', icon: '🙋',
           title: 'Tự Giới Thiệu Bản Thân',
           titleEn: 'Self Introduction',
           description: 'Giới thiệu tên, tuổi, quê quán, nghề nghiệp và sở thích.',
           duration: '2 tuần', skills: ['speaking','vocabulary','listening'],
           objectives: ['Tự giới thiệu trôi chảy trong 1 phút','Hỏi thông tin cá nhân người khác','Nói về công việc và nơi sống'],
           vocabulary: [
-            {en:'Name',vi:'Tên',phonetic:'/neɪm/'},
-            {en:'Age',vi:'Tuổi',phonetic:'/eɪdʒ/'},
-            {en:'Job / Occupation',vi:'Nghề nghiệp',phonetic:'/dʒɒb/'},
-            {en:'Hometown',vi:'Quê quán',phonetic:'/ˈhoʊm.taʊn/'},
-            {en:'Hobby',vi:'Sở thích',phonetic:'/ˈhɒb.i/'},
-            {en:'Nurse',vi:'Y tá',phonetic:'/nɜːrs/'}
+            {en: 'Name', vi: 'Tên', phonetic: '/neɪm/'},
+            {en: 'Age', vi: 'Tuổi', phonetic: '/eɪdʒ/'},
+            {en: 'Job / Occupation', vi: 'Nghề nghiệp', phonetic: '/dʒɒb/'},
+            {en: 'Hometown', vi: 'Quê quán', phonetic: '/ˈhoʊm.taʊn/'},
+            {en: 'Hobby', vi: 'Sở thích', phonetic: '/ˈhɒb.i/'},
+            {en: 'Nurse', vi: 'Y tá', phonetic: '/nɜːrs/'}
           ],
           phrases: [
-            {en:'My name is... I am ... years old.',vi:'Tên tôi là... Tôi ... tuổi.'},
-            {en:'I work as a nurse at...',vi:'Tôi làm y tá tại...'},
-            {en:'I come from...',vi:'Tôi đến từ...'},
-            {en:'In my free time, I like to...',vi:'Lúc rảnh, tôi thích...'}
+            {en: 'My name is... I am ... years old.', vi: 'Tên tôi là... Tôi ... tuổi.'},
+            {en: 'I work as a nurse at...', vi: 'Tôi làm y tá tại...'},
+            {en: 'I come from...', vi: 'Tôi đến từ...'},
+            {en: 'In my free time, I like to...', vi: 'Lúc rảnh, tôi thích...'}
           ],
           practice: ['Viết đoạn giới thiệu 5 câu về bản thân','Ghi âm bài giới thiệu và nghe lại','Tập giới thiệu với đồng nghiệp'],
           tip: 'Chuẩn bị sẵn bài giới thiệu 30 giây — rất hữu ích khi gặp bệnh nhân nước ngoài.'
         },
         {
-          id: 'd4', icon: '🔢',
+          id: 'd3', icon: '🔢',
           title: 'Số Đếm, Ngày Tháng & Giờ',
           titleEn: 'Numbers, Dates & Time',
           description: 'Đọc số, nói ngày tháng năm, hỏi và trả lời về giờ giấc.',
           duration: '2 tuần', skills: ['listening','speaking','vocabulary'],
           objectives: ['Đếm từ 1-1000','Nói ngày tháng năm sinh','Hỏi và trả lời giờ giấc'],
           vocabulary: [
-            {en:'Hundred',vi:'Trăm',phonetic:'/ˈhʌn.drəd/'},
-            {en:'Thousand',vi:'Nghìn',phonetic:'/ˈθaʊ.zənd/'},
-            {en:'January–December',vi:'Tháng 1–12',phonetic:''},
-            {en:'Monday–Sunday',vi:'Thứ 2–CN',phonetic:''},
-            {en:'Quarter',vi:'Phần tư (giờ)',phonetic:'/ˈkwɔːr.tər/'},
-            {en:'Half past',vi:'Rưỡi (giờ)',phonetic:'/hæf pæst/'}
+            {en: 'Hundred', vi: 'Trăm', phonetic: '/ˈhʌn.drəd/'},
+            {en: 'Thousand', vi: 'Nghìn', phonetic: '/ˈθaʊ.zənd/'},
+            {en: 'January–December', vi: 'Tháng 1–12', phonetic: ''},
+            {en: 'Monday–Sunday', vi: 'Thứ 2–CN', phonetic: ''},
+            {en: 'Quarter', vi: 'Phần tư (giờ)', phonetic: '/ˈkwɔːr.tər/'},
+            {en: 'Half past', vi: 'Rưỡi (giờ)', phonetic: '/hæf pæst/'}
           ],
           phrases: [
-            {en:'What time is it?',vi:'Mấy giờ rồi?'},
-            {en:"It's half past two.",vi:'Hai giờ rưỡi.'},
-            {en:'When is your birthday?',vi:'Sinh nhật bạn khi nào?'},
-            {en:'My birthday is on March 5th.',vi:'Sinh nhật tôi ngày 5 tháng 3.'}
+            {en: 'What time is it?', vi: 'Mấy giờ rồi?'},
+            {en: "It's half past two.", vi: 'Hai giờ rưỡi.'},
+            {en: 'When is your birthday?', vi: 'Sinh nhật bạn khi nào?'},
+            {en: 'My birthday is on March 5th.', vi: 'Sinh nhật tôi ngày 5 tháng 3.'}
           ],
           practice: ['Đọc to số điện thoại bằng tiếng Anh','Nói lịch làm việc tuần này','Tập hỏi & trả lời giờ với đồng nghiệp'],
           tip: 'Số đếm rất quan trọng trong y tế — liều thuốc, giờ uống, chỉ số sinh tồn đều dùng số.'
         },
         {
-          id: 'd5', icon: '👨‍👩‍👧‍👦',
+          id: 'd4', icon: '👨‍👩‍👧‍👦',
           title: 'Gia Đình & Mối Quan Hệ',
           titleEn: 'Family & Relationships',
           description: 'Tên gọi các thành viên gia đình, mô tả mối quan hệ.',
           duration: '1 tuần', skills: ['vocabulary','speaking'],
           objectives: ['Gọi tên thành viên gia đình','Mô tả gia đình mình','Hỏi về gia đình người khác'],
           vocabulary: [
-            {en:'Parents',vi:'Bố mẹ',phonetic:'/ˈper.ənts/'},
-            {en:'Sibling',vi:'Anh chị em',phonetic:'/ˈsɪb.lɪŋ/'},
-            {en:'Husband / Wife',vi:'Chồng / Vợ',phonetic:'/ˈhʌz.bənd/ /waɪf/'},
-            {en:'Son / Daughter',vi:'Con trai / gái',phonetic:'/sʌn/ /ˈdɔː.tər/'},
-            {en:'Grandparents',vi:'Ông bà',phonetic:'/ˈɡræn.per.ənts/'},
-            {en:'Relative',vi:'Họ hàng',phonetic:'/ˈrel.ə.tɪv/'}
+            {en: 'Parents', vi: 'Bố mẹ', phonetic: '/ˈper.ənts/'},
+            {en: 'Sibling', vi: 'Anh chị em', phonetic: '/ˈsɪb.lɪŋ/'},
+            {en: 'Husband / Wife', vi: 'Chồng / Vợ', phonetic: '/ˈhʌz.bənd/ /waɪf/'},
+            {en: 'Son / Daughter', vi: 'Con trai / gái', phonetic: '/sʌn/ /ˈdɔː.tər/'},
+            {en: 'Grandparents', vi: 'Ông bà', phonetic: '/ˈɡræn.per.ənts/'},
+            {en: 'Relative', vi: 'Họ hàng', phonetic: '/ˈrel.ə.tɪv/'}
           ],
           phrases: [
-            {en:'I have two brothers and one sister.',vi:'Tôi có hai anh trai và một chị gái.'},
-            {en:'Do you have any children?',vi:'Bạn có con không?'},
-            {en:'My mother is a teacher.',vi:'Mẹ tôi là giáo viên.'},
-            {en:'We are a family of five.',vi:'Gia đình tôi có 5 người.'}
+            {en: 'I have two brothers and one sister.', vi: 'Tôi có hai anh trai và một chị gái.'},
+            {en: 'Do you have any children?', vi: 'Bạn có con không?'},
+            {en: 'My mother is a teacher.', vi: 'Mẹ tôi là giáo viên.'},
+            {en: 'We are a family of five.', vi: 'Gia đình tôi có 5 người.'}
           ],
           practice: ['Vẽ sơ đồ gia đình bằng tiếng Anh','Giới thiệu gia đình trong 1 phút','Hỏi 3 người về gia đình họ'],
           tip: 'Khi chăm sóc bệnh nhân, bạn thường cần hỏi về người thân — luyện chủ đề này rất thực tế!'
         },
         {
-          id: 'd6', icon: '🍎',
+          id: 'd5', icon: '🍎',
           title: 'Thức Ăn & Đồ Uống',
           titleEn: 'Food & Drinks',
           description: 'Tên các món ăn, đồ uống phổ biến và cách diễn đạt sở thích ăn uống.',
           duration: '1 tuần', skills: ['vocabulary','speaking','listening'],
           objectives: ['Gọi tên 30+ món ăn và đồ uống','Nói về sở thích ăn uống','Hiểu menu cơ bản bằng tiếng Anh'],
           vocabulary: [
-            {en:'Rice',vi:'Cơm',phonetic:'/raɪs/'},
-            {en:'Chicken',vi:'Thịt gà',phonetic:'/ˈtʃɪk.ɪn/'},
-            {en:'Vegetable',vi:'Rau',phonetic:'/ˈvedʒ.tə.bəl/'},
-            {en:'Water',vi:'Nước',phonetic:'/ˈwɔː.tər/'},
-            {en:'Coffee',vi:'Cà phê',phonetic:'/ˈkɒf.i/'},
-            {en:'Allergic',vi:'Dị ứng',phonetic:'/əˈlɜː.dʒɪk/'}
+            {en: 'Rice', vi: 'Cơm', phonetic: '/raɪs/'},
+            {en: 'Chicken', vi: 'Thịt gà', phonetic: '/ˈtʃɪk.ɪn/'},
+            {en: 'Vegetable', vi: 'Rau', phonetic: '/ˈvedʒ.tə.bəl/'},
+            {en: 'Water', vi: 'Nước', phonetic: '/ˈwɔː.tər/'},
+            {en: 'Coffee', vi: 'Cà phê', phonetic: '/ˈkɒf.i/'},
+            {en: 'Allergic', vi: 'Dị ứng', phonetic: '/əˈlɜː.dʒɪk/'}
           ],
           phrases: [
-            {en:'I would like some water, please.',vi:'Cho tôi xin nước.'},
-            {en:'Are you allergic to any food?',vi:'Bạn có dị ứng thức ăn nào không?'},
-            {en:'I prefer chicken over beef.',vi:'Tôi thích gà hơn bò.'},
-            {en:'What would you like to eat?',vi:'Bạn muốn ăn gì?'}
+            {en: 'I would like some water, please.', vi: 'Cho tôi xin nước.'},
+            {en: 'Are you allergic to any food?', vi: 'Bạn có dị ứng thức ăn nào không?'},
+            {en: 'I prefer chicken over beef.', vi: 'Tôi thích gà hơn bò.'},
+            {en: 'What would you like to eat?', vi: 'Bạn muốn ăn gì?'}
           ],
           practice: ['Gọi tên đồ ăn trong bữa cơm bằng tiếng Anh','Tập gọi món tại quán ăn','Hỏi bệnh nhân về chế độ ăn kiêng'],
           tip: 'Y tá cần hỏi bệnh nhân về dị ứng thức ăn — học từ "allergic" thật kỹ!'
         },
         {
-          id: 'd7', icon: '🏠',
+          id: 'd6', icon: '🏠',
           title: 'Các Hoạt Động Hàng Ngày',
           titleEn: 'Daily Routines & Activities',
           description: 'Mô tả thói quen hàng ngày: thức dậy, đi làm, ăn uống, ngủ.',
           duration: '1 tuần', skills: ['speaking','vocabulary'],
           objectives: ['Mô tả lịch trình ngày thường','Dùng thì hiện tại đơn cơ bản','Hỏi người khác về thói quen'],
           vocabulary: [
-            {en:'Wake up',vi:'Thức dậy',phonetic:'/weɪk ʌp/'},
-            {en:'Go to work',vi:'Đi làm',phonetic:'/ɡoʊ tə wɜːrk/'},
-            {en:'Take a shower',vi:'Tắm',phonetic:'/teɪk ə ˈʃaʊ.ər/'},
-            {en:'Have breakfast',vi:'Ăn sáng',phonetic:'/hæv ˈbrek.fəst/'},
-            {en:'Go to bed',vi:'Đi ngủ',phonetic:'/ɡoʊ tə bed/'},
-            {en:'Exercise',vi:'Tập thể dục',phonetic:'/ˈek.sər.saɪz/'}
+            {en: 'Wake up', vi: 'Thức dậy', phonetic: '/weɪk ʌp/'},
+            {en: 'Go to work', vi: 'Đi làm', phonetic: '/ɡoʊ tə wɜːrk/'},
+            {en: 'Take a shower', vi: 'Tắm', phonetic: '/teɪk ə ˈʃaʊ.ər/'},
+            {en: 'Have breakfast', vi: 'Ăn sáng', phonetic: '/hæv ˈbrek.fəst/'},
+            {en: 'Go to bed', vi: 'Đi ngủ', phonetic: '/ɡoʊ tə bed/'},
+            {en: 'Exercise', vi: 'Tập thể dục', phonetic: '/ˈek.sər.saɪz/'}
           ],
           phrases: [
-            {en:'I usually wake up at 6 AM.',vi:'Tôi thường dậy lúc 6 giờ sáng.'},
-            {en:'What do you do in the morning?',vi:'Buổi sáng bạn làm gì?'},
-            {en:'I work the night shift.',vi:'Tôi làm ca đêm.'},
-            {en:'After work, I go home and rest.',vi:'Sau giờ làm, tôi về nhà nghỉ ngơi.'}
+            {en: 'I usually wake up at 6 AM.', vi: 'Tôi thường dậy lúc 6 giờ sáng.'},
+            {en: 'What do you do in the morning?', vi: 'Buổi sáng bạn làm gì?'},
+            {en: 'I work the night shift.', vi: 'Tôi làm ca đêm.'},
+            {en: 'After work, I go home and rest.', vi: 'Sau giờ làm, tôi về nhà nghỉ ngơi.'}
           ],
           practice: ['Mô tả một ngày làm việc của bạn','Hỏi đồng nghiệp về thói quen sáng','Viết 7 câu về lịch trình hàng ngày'],
           tip: 'Tập nói thói quen giúp bạn quen cấu trúc câu cơ bản I + verb mỗi ngày.'
         },
         {
-          id: 'd8', icon: '❓',
+          id: 'd7', icon: '❓',
           title: 'Đặt Câu Hỏi Cơ Bản',
           titleEn: 'Basic Questions (Wh-Questions)',
           description: 'Sử dụng What, Where, When, Who, Why, How để đặt câu hỏi.',
           duration: '2 tuần', skills: ['speaking','listening','vocabulary'],
           objectives: ['Đặt câu hỏi với 6 từ Wh-','Trả lời câu hỏi đúng ngữ pháp','Dùng câu hỏi trong giao tiếp hàng ngày'],
           vocabulary: [
-            {en:'What',vi:'Cái gì',phonetic:'/wɒt/'},
-            {en:'Where',vi:'Ở đâu',phonetic:'/wer/'},
-            {en:'When',vi:'Khi nào',phonetic:'/wen/'},
-            {en:'Who',vi:'Ai',phonetic:'/huː/'},
-            {en:'Why',vi:'Tại sao',phonetic:'/waɪ/'},
-            {en:'How',vi:'Như thế nào',phonetic:'/haʊ/'}
+            {en: 'What', vi: 'Cái gì', phonetic: '/wɒt/'},
+            {en: 'Where', vi: 'Ở đâu', phonetic: '/wer/'},
+            {en: 'When', vi: 'Khi nào', phonetic: '/wen/'},
+            {en: 'Who', vi: 'Ai', phonetic: '/huː/'},
+            {en: 'Why', vi: 'Tại sao', phonetic: '/waɪ/'},
+            {en: 'How', vi: 'Như thế nào', phonetic: '/haʊ/'}
           ],
           phrases: [
-            {en:'What is your name?',vi:'Tên bạn là gì?'},
-            {en:'Where do you live?',vi:'Bạn sống ở đâu?'},
-            {en:'When does the hospital open?',vi:'Bệnh viện mở cửa khi nào?'},
-            {en:'How do you feel today?',vi:'Hôm nay bạn cảm thấy thế nào?'}
+            {en: 'What is your name?', vi: 'Tên bạn là gì?'},
+            {en: 'Where do you live?', vi: 'Bạn sống ở đâu?'},
+            {en: 'When does the hospital open?', vi: 'Bệnh viện mở cửa khi nào?'},
+            {en: 'How do you feel today?', vi: 'Hôm nay bạn cảm thấy thế nào?'}
           ],
           practice: ['Đặt 10 câu hỏi Wh- về đồng nghiệp','Role-play hỏi thông tin bệnh nhân','Nghe và trả lời câu hỏi từ audio'],
           tip: 'Trong y tế, Wh-questions là công cụ quan trọng nhất: What hurts? Where is the pain? When did it start?'
+        },
+        {
+          id: 'd8', icon: '🎨',
+          title: 'Màu Sắc & Mô Tả Đồ Vật',
+          titleEn: 'Colors, Shapes & Describing Objects',
+          description: 'Mô tả màu sắc, kích thước, hình dáng của đồ vật trong cuộc sống và công việc y tế.',
+          duration: '2 tuần', skills: ['vocabulary','speaking','listening'],
+          objectives: ['Gọi tên 15+ màu sắc và hình dáng cơ bản','Mô tả kích thước và đặc điểm đồ vật','Áp dụng mô tả thuốc và thiết bị y tế đơn giản'],
+          vocabulary: [
+            {en: 'Color', vi: 'Màu sắc', phonetic: '/ˈkʌl.ər/'},
+            {en: 'Shape', vi: 'Hình dáng', phonetic: '/ʃeɪp/'},
+            {en: 'Red / Blue / Yellow', vi: 'Đỏ / Xanh dương / Vàng', phonetic: ''},
+            {en: 'Big / Small / Medium', vi: 'To / Nhỏ / Vừa', phonetic: ''},
+            {en: 'Round / Square / Oval', vi: 'Tròn / Vuông / Bầu dục', phonetic: ''},
+            {en: 'Pill / Tablet / Capsule', vi: 'Viên tròn / Viên nén / Viên nhộng', phonetic: ''}
+          ],
+          phrases: [
+            {en: 'What color is the pill?', vi: 'Viên thuốc màu gì?'},
+            {en: 'It is a small, round yellow tablet.', vi: 'Nó là một viên thuốc nén màu vàng, nhỏ và tròn.'},
+            {en: 'Please give me the big bottle.', vi: 'Vui lòng đưa tôi cái chai lớn.'},
+            {en: 'The warning sign is a red triangle.', vi: 'Biển cảnh báo là một hình tam giác màu đỏ.'}
+          ],
+          practice: ['Mô tả màu sắc và hình dáng của 5 loại thuốc trong tủ thuốc','Tập mô tả các đồ vật cá nhân quanh phòng ngủ','Hỏi và trả lời về đặc điểm các thiết bị y tế cơ bản'],
+          tip: 'Khi mô tả, quy tắc sắp xếp tính từ cơ bản là Kích thước -> Hình dáng -> Màu sắc (ví dụ: a small, round, yellow pill).'
         }
       ]
     },
