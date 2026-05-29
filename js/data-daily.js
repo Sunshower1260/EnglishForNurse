@@ -23,75 +23,82 @@ const DAILY_ENGLISH = {
         lessons: [
         {
           id: 'd1', icon: '👋',
-          title: 'Chào Hỏi & Xã Giao',
-          titleEn: 'Greetings & Social Manners',
-          description: 'Các cách chào hỏi lịch sự, hỏi thăm sức khỏe và đáp lại.',
+          title: 'Chào Hỏi, Tiếp Đón & Xã Giao',
+          titleEn: 'Greetings, Admission & Social Manners',
+          description: 'Chào hỏi lịch sự, tiếp đón bệnh nhân tại quầy lễ tân, tiếp nhận thông tin và hướng dẫn chỉ dẫn y tế cơ bản.',
           duration: '2 tuần', skills: ['speaking','listening','vocabulary'],
-          objectives: ['Chào hỏi đúng theo thời gian trong ngày','Hỏi thăm và đáp lại lịch sự','Tạm biệt trong nhiều tình huống khác nhau'],
+          objectives: ['Chào hỏi chuyên nghiệp theo thời gian và bối cảnh y tế','Làm chủ quy trình tiếp đón bệnh nhân (hỏi giấy tờ, điền tờ khai)','Sử dụng thành thạo các câu chỉ dẫn lịch sự (mời ngồi, mời đợi, ký tên)'],
           vocabulary: [
-            {en: 'Good morning', vi: 'Chào buổi sáng', phonetic: '/ɡʊd ˈmɔː.nɪŋ/'},
-            {en: 'Good afternoon', vi: 'Chào buổi chiều', phonetic: '/ɡʊd ˌɑːf.tɚˈnuːn/'},
-            {en: 'Good evening', vi: 'Chào buổi tối', phonetic: '/ɡʊd ˈiːv.nɪŋ/'},
-            {en: 'Goodbye', vi: 'Tạm biệt', phonetic: '/ˌɡʊdˈbaɪ/'},
-            {en: 'Nice to meet you', vi: 'Rất vui được gặp bạn', phonetic: '/naɪs tuː miːt juː/'},
-            {en: 'See you later', vi: 'Hẹn gặp lại', phonetic: '/siː juː ˈleɪ.tər/'}
+            {en: 'Good morning / afternoon / evening', vi: 'Chào buổi sáng / chiều / tối', phonetic: '/ɡʊd ˈmɔː.nɪŋ/ /ˌɑːf.tɚˈnuːn/ /ˈiːv.nɪŋ/'},
+            {en: 'Welcome', vi: 'Chào mừng / Tiếp đón', phonetic: '/ˈwel.kəm/'},
+            {en: 'Registration form', vi: 'Tờ khai đăng ký', phonetic: '/ˌredʒ.ɪˈstreɪ.ʃən fɔːm/'},
+            {en: 'Health insurance card', vi: 'Thẻ bảo hiểm y tế', phonetic: '/helθ ɪnˈʃɔː.rəns kɑːd/'},
+            {en: 'Passport / ID card', vi: 'Hộ chiếu / Căn cước công dân', phonetic: '/ˈpɑːs.pɔːt/ /ˌaɪˈdiː kɑːd/'},
+            {en: 'Signature / Sign', vi: 'Chữ ký / Ký tên', phonetic: '/ˈsɪɡ.nə.tʃər/ /saɪn/'},
+            {en: 'Please / Thank you / Excuse me', vi: 'Làm ơn / Cảm ơn / Xin lỗi (lịch sự)', phonetic: ''},
+            {en: 'Wait / Sit down', vi: 'Chờ đợi / Ngồi xuống', phonetic: '/weɪt/ /sɪt daʊn/'}
           ],
           phrases: [
-            {en: 'How are you today?', vi: 'Hôm nay bạn khỏe không?'},
-            {en: "I'm fine, thank you. And you?", vi: 'Tôi khỏe, cảm ơn. Còn bạn?'},
-            {en: 'Have a nice day!', vi: 'Chúc bạn ngày tốt lành!'},
-            {en: "It was nice talking to you.", vi: 'Rất vui được nói chuyện với bạn.'}
+            {en: 'Good morning. Welcome to our clinic.', vi: 'Chào buổi sáng. Chào mừng đến với phòng khám của chúng tôi.'},
+            {en: 'How can I help you today?', vi: 'Tôi có thể giúp gì cho anh/chị hôm nay?'},
+            {en: 'Could you please fill out this registration form?', vi: 'Anh/chị vui lòng điền vào tờ khai đăng ký này nhé?'},
+            {en: 'I need your passport and health insurance card, please.', vi: 'Tôi cần hộ chiếu và thẻ bảo hiểm y tế của anh/chị.'},
+            {en: 'Please sit here and wait for a moment.', vi: 'Vui lòng ngồi đây và đợi một lát.'},
+            {en: 'The doctor will see you shortly.', vi: 'Bác sĩ sẽ khám cho anh/chị ngay.'},
+            {en: 'Please sign your name here.', vi: 'Vui lòng ký tên của bạn ở đây.'}
           ],
-          practice: ['Chào đồng nghiệp bằng tiếng Anh mỗi ngày','Role-play: gặp gỡ người mới','Luyện 10 câu chào theo thời gian trong ngày'],
-          tip: 'Mỉm cười khi chào — ngữ điệu thân thiện giúp bạn tự tin hơn nhiều.'
+          practice: ['Đóng vai y tá tại quầy lễ tân tiếp đón bệnh nhân nước ngoài','Luyện phát âm chuẩn các thuật ngữ hành chính y khoa','Ghi âm và kiểm tra ngữ điệu lịch sự khi chỉ dẫn bệnh nhân'],
+          tip: 'Luôn nở nụ cười và duy trì giao tiếp bằng mắt (eye contact) khi tiếp đón bệnh nhân mới để tạo cảm giác thân thiện và an tâm.'
         },
         {
           id: 'd2', icon: '🙋',
           title: 'Tự Giới Thiệu Bản Thân',
-          titleEn: 'Self Introduction',
-          description: 'Giới thiệu tên, tuổi, quê quán, nghề nghiệp và sở thích.',
+          titleEn: 'Self Introduction for Nurses',
+          description: 'Giới thiệu tên, tuổi, vị trí làm việc, khoa chuyên môn và giới thiệu bản thân với bệnh nhân hoặc đồng nghiệp nước ngoài.',
           duration: '2 tuần', skills: ['speaking','vocabulary','listening'],
-          objectives: ['Tự giới thiệu trôi chảy trong 1 phút','Hỏi thông tin cá nhân người khác','Nói về công việc và nơi sống'],
+          objectives: ['Tự giới thiệu chuyên nghiệp trong 1 phút','Nói rõ về vị trí y tá và khoa chuyên môn đang làm việc','Đặt câu hỏi xã giao cơ bản với đồng nghiệp nước ngoài'],
           vocabulary: [
-            {en: 'Name', vi: 'Tên', phonetic: '/neɪm/'},
-            {en: 'Age', vi: 'Tuổi', phonetic: '/eɪdʒ/'},
-            {en: 'Job / Occupation', vi: 'Nghề nghiệp', phonetic: '/dʒɒb/'},
-            {en: 'Hometown', vi: 'Quê quán', phonetic: '/ˈhoʊm.taʊn/'},
-            {en: 'Hobby', vi: 'Sở thích', phonetic: '/ˈhɒb.i/'},
-            {en: 'Nurse', vi: 'Y tá', phonetic: '/nɜːrs/'}
+            {en: 'Department / Ward', vi: 'Khoa / Buồng bệnh', phonetic: '/dɪˈpɑːt.mənt/ /wɔːd/'},
+            {en: 'Pediatrics department', vi: 'Khoa Nhi', phonetic: '/ˌpiː.diˈæt.rɪks/'},
+            {en: 'Emergency room (ER)', vi: 'Phòng cấp cứu', phonetic: '/ɪˈmɜː.dʒən.si/ /ruːm/'},
+            {en: 'Intensive Care Unit (ICU)', vi: 'Khoa hồi sức tích cực', phonetic: '/ɪnˈten.sɪv keər ˈjuː.nɪt/'},
+            {en: 'Experience', vi: 'Kinh nghiệm', phonetic: '/ɪkˈspɪə.ri.əns/'},
+            {en: 'Care / Take care of', vi: 'Chăm sóc / Chăm lo cho', phonetic: '/keər/'}
           ],
           phrases: [
-            {en: 'My name is... I am ... years old.', vi: 'Tên tôi là... Tôi ... tuổi.'},
-            {en: 'I work as a nurse at...', vi: 'Tôi làm y tá tại...'},
-            {en: 'I come from...', vi: 'Tôi đến từ...'},
-            {en: 'In my free time, I like to...', vi: 'Lúc rảnh, tôi thích...'}
+            {en: 'Hello, my name is Lan. I am your nurse today.', vi: 'Xin chào, tôi tên là Lan. Tôi là y tá của anh/chị hôm nay.'},
+            {en: 'I work as a nurse at Vinmec Hospital.', vi: 'Tôi làm việc với tư cách là y tá tại Bệnh viện Vinmec.'},
+            {en: 'I work in the Pediatrics department.', vi: 'Tôi làm việc tại khoa Nhi.'},
+            {en: 'I have four years of experience in nursing.', vi: 'Tôi có bốn năm kinh nghiệm trong ngành điều dưỡng.'},
+            {en: 'I will take care of you during this shift.', vi: 'Tôi sẽ chăm sóc anh/chị trong ca trực này.'}
           ],
-          practice: ['Viết đoạn giới thiệu 5 câu về bản thân','Ghi âm bài giới thiệu và nghe lại','Tập giới thiệu với đồng nghiệp'],
-          tip: 'Chuẩn bị sẵn bài giới thiệu 30 giây — rất hữu ích khi gặp bệnh nhân nước ngoài.'
+          practice: ['Viết đoạn giới thiệu 5 câu giới thiệu bản thân trong bối cảnh y tế','Thực hành giới thiệu bản thân trước gương với phong thái tự tin','Đóng vai y tá giới thiệu mình với bệnh nhân mới nhập viện'],
+          tip: 'Khi giới thiệu bản thân với bệnh nhân, hãy nói rõ ràng, âm lượng vừa phải và kết thúc bằng câu nói trấn an "I will take care of you today".'
         },
         {
           id: 'd3', icon: '🔢',
-          title: 'Số Đếm, Ngày Tháng & Giờ',
-          titleEn: 'Numbers, Dates & Time',
-          description: 'Đọc số, nói ngày tháng năm, hỏi và trả lời về giờ giấc.',
+          title: 'Số Đếm, Ngày Tháng & Giờ Lâm Sàng',
+          titleEn: 'Clinical Numbers, Dates & Time',
+          description: 'Đọc số đếm lâm sàng, đếm liều lượng thuốc, đọc các chỉ số sinh hiệu (huyết áp, nhiệt độ) và sắp xếp thời gian làm việc.',
           duration: '2 tuần', skills: ['listening','speaking','vocabulary'],
-          objectives: ['Đếm từ 1-1000','Nói ngày tháng năm sinh','Hỏi và trả lời giờ giấc'],
+          objectives: ['Đọc chuẩn xác số đếm thông thường và phân biệt teen vs ty','Nói chính xác liều lượng thuốc (mg, ml, viên)','Đọc lưu loát các chỉ số sinh hiệu (nhiệt độ, huyết áp, nhịp tim)','Hỏi và trả lời giờ hẹn khám, giờ uống thuốc'],
           vocabulary: [
-            {en: 'Hundred', vi: 'Trăm', phonetic: '/ˈhʌn.drəd/'},
-            {en: 'Thousand', vi: 'Nghìn', phonetic: '/ˈθaʊ.zənd/'},
-            {en: 'January–December', vi: 'Tháng 1–12', phonetic: ''},
-            {en: 'Monday–Sunday', vi: 'Thứ 2–CN', phonetic: ''},
-            {en: 'Quarter', vi: 'Phần tư (giờ)', phonetic: '/ˈkwɔːr.tər/'},
-            {en: 'Half past', vi: 'Rưỡi (giờ)', phonetic: '/hæf pæst/'}
+            {en: 'Blood pressure (BP)', vi: 'Huyết áp', phonetic: '/blʌd ˈpreʃ.ər/'},
+            {en: 'Heart rate / Pulse', vi: 'Nhịp tim / Mạch', phonetic: '/hɑːt reɪt/ /pʌls/'},
+            {en: 'Temperature', vi: 'Nhiệt độ', phonetic: '/ˈtem.prə.tʃər/'},
+            {en: 'Milligram (mg)', vi: 'Mi-li-gam', phonetic: '/ˈmɪl.ɪ.ɡræm/'},
+            {en: 'Milliliter (ml)', vi: 'Mi-li-lít', phonetic: '/ˈmɪl.ɪˌliː.tər/'},
+            {en: 'Dose / Dosage', vi: 'Liều lượng', phonetic: '/doʊs/ /ˈdoʊ.sɪdʒ/'}
           ],
           phrases: [
-            {en: 'What time is it?', vi: 'Mấy giờ rồi?'},
-            {en: "It's half past two.", vi: 'Hai giờ rưỡi.'},
-            {en: 'When is your birthday?', vi: 'Sinh nhật bạn khi nào?'},
-            {en: 'My birthday is on March 5th.', vi: 'Sinh nhật tôi ngày 5 tháng 3.'}
+            {en: 'Your blood pressure is 120 over 80.', vi: 'Huyết áp của bác là 120 trên 80.'},
+            {en: 'Your temperature is 37.5 degrees Celsius.', vi: 'Nhiệt độ của bác là 37.5 độ C.'},
+            {en: 'Take two tablets every six hours.', vi: 'Uống hai viên thuốc này mỗi sáu tiếng.'},
+            {en: 'Please take 5 milliliters of this syrup.', vi: 'Vui lòng uống 5 mi-li-lít si-rô này.'},
+            {en: 'Your next appointment is at 2:30 PM.', vi: 'Lịch hẹn tiếp theo của bác là lúc 2 giờ 30 chiều.'}
           ],
-          practice: ['Đọc to số điện thoại bằng tiếng Anh','Nói lịch làm việc tuần này','Tập hỏi & trả lời giờ với đồng nghiệp'],
-          tip: 'Số đếm rất quan trọng trong y tế — liều thuốc, giờ uống, chỉ số sinh tồn đều dùng số.'
+          practice: ['Tập đọc nhanh 10 chỉ số đo huyết áp và nhịp tim mẫu','Đọc to đơn thuốc với liều lượng và giờ giấc khác nhau','Đóng vai y tá thông báo lịch hẹn và hướng dẫn giờ uống thuốc'],
+          tip: 'Đặc biệt cẩn thận khi đọc số để tránh nhầm lẫn nghiêm trọng: Ví dụ 15 (fifteen) khác hoàn toàn 50 (fifty). Hãy nhấn mạnh âm đuôi -teen để người nghe không hiểu lầm.'
         },
         {
           id: 'd4', icon: '👨‍👩‍👧‍👦',
