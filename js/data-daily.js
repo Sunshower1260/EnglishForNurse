@@ -52,28 +52,32 @@ const DAILY_ENGLISH = {
         },
         {
           id: 'd2', icon: '🙋',
-          title: 'Tự Giới Thiệu Bản Thân',
-          titleEn: 'Self Introduction for Nurses',
-          description: 'Giới thiệu tên, tuổi, vị trí làm việc, khoa chuyên môn và giới thiệu bản thân với bệnh nhân hoặc đồng nghiệp nước ngoài.',
-          duration: '2 tuần', skills: ['speaking','vocabulary','listening'],
-          objectives: ['Tự giới thiệu chuyên nghiệp trong 1 phút','Nói rõ về vị trí y tá và khoa chuyên môn đang làm việc','Đặt câu hỏi xã giao cơ bản với đồng nghiệp nước ngoài'],
+          title: 'Tự Giới Thiệu & Trấn An Bệnh Nhân',
+          titleEn: 'Self Introduction & Nursing Role',
+          description: 'Giới thiệu tên, khoa phòng, kinh nghiệm, cam kết chăm sóc bệnh nhân và hướng dẫn sử dụng nút gọi y tá — nối tiếp tự nhiên sau quy trình tiếp đón ở Bài 1.',
+          duration: '2 tuần', skills: ['speaking','listening','vocabulary'],
+          objectives: ['Tự giới thiệu chuyên nghiệp trong 30 giây trước bệnh nhân mới nhập viện','Gọi tên chính xác khoa phòng (Pediatrics, ICU, ER) và số năm kinh nghiệm','Sử dụng thành thạo các câu trấn an bệnh nhân (cam kết chăm sóc, hướng dẫn nút gọi)','Phản xạ giao tiếp xã giao với bác sĩ và đồng nghiệp nước ngoài'],
           vocabulary: [
+            {en: 'Nurse', vi: 'Y tá / Điều dưỡng', phonetic: '/nɜːrs/'},
             {en: 'Department / Ward', vi: 'Khoa / Buồng bệnh', phonetic: '/dɪˈpɑːt.mənt/ /wɔːd/'},
             {en: 'Pediatrics department', vi: 'Khoa Nhi', phonetic: '/ˌpiː.diˈæt.rɪks/'},
-            {en: 'Emergency room (ER)', vi: 'Phòng cấp cứu', phonetic: '/ɪˈmɜː.dʒən.si/ /ruːm/'},
+            {en: 'Emergency Room (ER)', vi: 'Phòng cấp cứu', phonetic: '/ɪˈmɜː.dʒən.si ruːm/'},
             {en: 'Intensive Care Unit (ICU)', vi: 'Khoa hồi sức tích cực', phonetic: '/ɪnˈten.sɪv keər ˈjuː.nɪt/'},
             {en: 'Experience', vi: 'Kinh nghiệm', phonetic: '/ɪkˈspɪə.ri.əns/'},
-            {en: 'Care / Take care of', vi: 'Chăm sóc / Chăm lo cho', phonetic: '/keər/'}
+            {en: 'Shift', vi: 'Ca trực', phonetic: '/ʃɪft/'},
+            {en: 'Call button', vi: 'Nút gọi y tá', phonetic: '/kɔːl ˈbʌt.ən/'}
           ],
           phrases: [
-            {en: 'Hello, my name is Lan. I am your nurse today.', vi: 'Xin chào, tôi tên là Lan. Tôi là y tá của anh/chị hôm nay.'},
-            {en: 'I work as a nurse at Vinmec Hospital.', vi: 'Tôi làm việc với tư cách là y tá tại Bệnh viện Vinmec.'},
-            {en: 'I work in the Pediatrics department.', vi: 'Tôi làm việc tại khoa Nhi.'},
-            {en: 'I have four years of experience in nursing.', vi: 'Tôi có bốn năm kinh nghiệm trong ngành điều dưỡng.'},
-            {en: 'I will take care of you during this shift.', vi: 'Tôi sẽ chăm sóc anh/chị trong ca trực này.'}
+            {en: 'Hello, Mr. Smith. I am Hoa, your nurse today.', vi: 'Xin chào ông Smith. Tôi là Hoa, y tá của ông hôm nay.'},
+            {en: 'I work in this Internal Medicine ward.', vi: 'Tôi làm việc tại khoa Nội tổng hợp này.'},
+            {en: 'I have five years of experience in nursing.', vi: 'Tôi có năm năm kinh nghiệm trong ngành điều dưỡng.'},
+            {en: 'I am here to take care of you during this shift.', vi: 'Tôi ở đây để chăm sóc anh/chị trong ca trực này.'},
+            {en: 'If you need any help, just press this call button.', vi: 'Nếu bác cần giúp đỡ, cứ nhấn chiếc nút gọi này nhé.'},
+            {en: 'Please don\'t worry. You are in good hands.', vi: 'Xin đừng lo lắng. Bác đang được chăm sóc tốt.'},
+            {en: 'I will come back to check on you in thirty minutes.', vi: 'Tôi sẽ quay lại kiểm tra cho bác sau ba mươi phút.'}
           ],
-          practice: ['Viết đoạn giới thiệu 5 câu giới thiệu bản thân trong bối cảnh y tế','Thực hành giới thiệu bản thân trước gương với phong thái tự tin','Đóng vai y tá giới thiệu mình với bệnh nhân mới nhập viện'],
-          tip: 'Khi giới thiệu bản thân với bệnh nhân, hãy nói rõ ràng, âm lượng vừa phải và kết thúc bằng câu nói trấn an "I will take care of you today".'
+          practice: ['Đóng vai y tá gõ cửa phòng bệnh và giới thiệu bản thân đầy đủ với bệnh nhân mới','Luyện nói phản xạ trước gương bài giới thiệu 30 giây (Elevator Pitch)','Ghi âm Zalo phản hồi bệnh nhân hỏi: "Hello nurse. Who are you?"'],
+          tip: 'Luôn nói TÊN BỆNH NHÂN trước khi giới thiệu mình (ví dụ: "Hello, Mr. Smith. I am Hoa...") để tạo cảm giác tôn trọng. Kết thúc bằng câu trấn an — đó là "liều thuốc lời nói" hiệu quả nhất.'
         },
         {
           id: 'd3', icon: '🔢',

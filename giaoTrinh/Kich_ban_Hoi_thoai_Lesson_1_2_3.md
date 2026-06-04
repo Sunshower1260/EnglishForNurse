@@ -89,40 +89,48 @@ Nurse Lan: My pleasure. Hope you feel better soon!
 
 ---
 
-## 🙋 BÀI 2: TỰ GIỚI THIỆU BẢN THÂN CHO Y TÁ
+## 🙋 BÀI 2: TỰ GIỚI THIỆU & TRẤN AN BỆNH NHÂN
 
-### TÌNH HUỐNG 1: Y tá giới thiệu bản thân khi tiếp nhận bệnh nhân mới chuyển vào khoa
+### TÌNH HUỐNG 1: Y tá giới thiệu bản thân khi bước vào phòng bệnh nhân mới nhập viện
 *   **Nhân vật:**
     *   **Nurse Hoa:** Y tá khoa Nội (Giọng Nữ, nhẹ nhàng, tự tin).
-    *   **Mr. John Smith:** Bệnh nhân vừa chuyển khoa (Giọng Nam).
+    *   **Mr. John Smith:** Bệnh nhân vừa nhập viện, đang lo lắng (Giọng Nam).
 
 #### 🎙️ Lời thoại thuần tiếng Anh (Dùng cho AI Voice Generator)
 ```text
 Nurse Hoa: Hello, Mr. Smith. Good afternoon! I am Hoa, your nurse today.
 Mr. Smith: Hello, nurse.
 Nurse Hoa: I work in this Internal Medicine ward. I have five years of experience in nursing, so please don't worry.
-Mr. Smith: That is good to hear. I am still a bit tired.
-Nurse Hoa: I understand. I am here to take care of you during this shift. If you need any help, just press this call button.
+Mr. Smith: That is good to hear. I am still a bit tired from the trip here.
+Nurse Hoa: I understand. That is completely normal. First, I am going to check your blood pressure and temperature. It will only take a few minutes.
+Mr. Smith: Okay, go ahead.
+Nurse Hoa: Thank you. After that, the doctor will come to examine you. I will be here the whole time.
+Mr. Smith: Will the doctor come soon?
+Nurse Hoa: Yes, the doctor will see you shortly. In the meantime, if you need anything at all, just press this red call button right here.
 Mr. Smith: Thank you, Hoa. You are very kind.
-Nurse Hoa: My pleasure. Rest well, Mr. Smith.
+Nurse Hoa: My pleasure. I will come back to check on you in thirty minutes. Rest well, Mr. Smith.
 ```
 
 #### 📖 Bản dịch song ngữ đối chiếu
 | Vai | Lời thoại tiếng Anh (English) | Dịch nghĩa tiếng Việt (Vietnamese) |
 | :--- | :--- | :--- |
-| **Nurse** | Hello, Mr. Smith. Good afternoon! I am Hoa, your nurse today. | Xin chào ông Smith. Chúc ông buổi chiều tốt lành! Tôi là Hoa, y tá của ông hôm nay. |
+| **Nurse** | Hello, Mr. Smith. Good afternoon! I am Hoa, your nurse today. | Xin chào ông Smith. Chào buổi chiều! Tôi là Hoa, y tá của ông hôm nay. |
 | **Patient** | Hello, nurse. | Chào cô y tá. |
 | **Nurse** | I work in this Internal Medicine ward. I have five years of experience in nursing, so please don't worry. | Tôi làm việc tại khoa Nội tổng hợp này. Tôi đã có 5 năm kinh nghiệm trong ngành điều dưỡng nên ông yên tâm nhé. |
-| **Patient** | That is good to hear. I am still a bit tired. | Thật tốt khi nghe vậy. Tôi vẫn cảm thấy hơi mệt. |
-| **Nurse** | I understand. I am here to take care of you during this shift. If you need any help, just press this call button. | Tôi hiểu mà. Tôi ở đây để chăm sóc ông trong suốt ca trực này. Nếu ông cần bất kỳ sự giúp đỡ nào, cứ nhấn chiếc nút gọi này nhé. |
+| **Patient** | That is good to hear. I am still a bit tired from the trip here. | Thật tốt khi nghe vậy. Tôi vẫn cảm thấy hơi mệt sau chuyến đi đến đây. |
+| **Nurse** | I understand. That is completely normal. First, I am going to check your blood pressure and temperature. It will only take a few minutes. | Tôi hiểu mà. Điều đó là hoàn toàn bình thường. Trước tiên, tôi sẽ đo huyết áp và nhiệt độ cho ông. Chỉ mất vài phút thôi. |
+| **Patient** | Okay, go ahead. | Được rồi, cô cứ tiến hành đi. |
+| **Nurse** | Thank you. After that, the doctor will come to examine you. I will be here the whole time. | Cảm ơn ông. Sau đó, bác sĩ sẽ đến khám cho ông. Tôi sẽ ở đây suốt thời gian đó. |
+| **Patient** | Will the doctor come soon? | Bác sĩ có đến sớm không? |
+| **Nurse** | Yes, the doctor will see you shortly. In the meantime, if you need anything at all, just press this red call button right here. | Vâng, bác sĩ sẽ đến ngay thôi ạ. Trong lúc chờ, nếu ông cần bất kỳ điều gì, cứ nhấn chiếc nút gọi màu đỏ ngay đây nhé. |
 | **Patient** | Thank you, Hoa. You are very kind. | Cảm ơn Hoa. Cô thật chu đáo. |
-| **Nurse** | My pleasure. Rest well, Mr. Smith. | Niềm vinh hạnh của tôi. Chúc ông nghỉ ngơi tốt, ông Smith. |
+| **Nurse** | My pleasure. I will come back to check on you in thirty minutes. Rest well, Mr. Smith. | Niềm vinh hạnh của tôi. Tôi sẽ quay lại kiểm tra cho ông sau ba mươi phút. Chúc ông nghỉ ngơi tốt, ông Smith. |
 
 ---
 
 ### TÌNH HUỐNG 2: Giới thiệu bản thân xã giao với một Bác sĩ nước ngoài mới đến khoa
 *   **Nhân vật:**
-    *   **Dr. John:** Bác sĩ trưởng khoa mới (Giọng Nam, giọng trầm, ấm).
+    *   **Dr. John:** Bác sĩ mới chuyển đến khoa Nhi (Giọng Nam, giọng trầm, ấm).
     *   **Nurse Hoa:** Y tá khoa Nhi (Giọng Nữ).
 
 #### 🎙️ Lời thoại thuần tiếng Anh (Dùng cho AI Voice Generator)
@@ -131,19 +139,27 @@ Dr. John: Hello! Are you the nurse on duty today?
 Nurse Hoa: Yes, doctor. Good morning! My name is Hoa. Nice to meet you.
 Dr. John: Nice to meet you too, Hoa. How long have you been working here?
 Nurse Hoa: I have been working in this Pediatrics department for three years.
-Dr. John: Great. Let's work together to check on the patients today.
-Nurse Hoa: Yes, doctor. I am ready.
+Dr. John: Three years — that's great. So you know the patients here well?
+Nurse Hoa: Yes, I do. We have fifteen young patients in the ward right now. I can give you a brief update on each one.
+Dr. John: That would be very helpful. Let's do that before we start the rounds.
+Nurse Hoa: Of course, doctor. Let me get the patient files. I will be right back.
+Dr. John: Thank you, Hoa. I can already tell we will make a good team.
+Nurse Hoa: Thank you, doctor. I am happy to work with you.
 ```
 
 #### 📖 Bản dịch song ngữ đối chiếu
 | Vai | Lời thoại tiếng Anh (English) | Dịch nghĩa tiếng Việt (Vietnamese) |
 | :--- | :--- | :--- |
 | **Doctor** | Hello! Are you the nurse on duty today? | Xin chào! Cô là điều dưỡng trực ca hôm nay phải không? |
-| **Nurse** | Yes, doctor. Good morning! My name is Hoa. Nice to meet you. | Dạ vâng thưa bác sĩ. Chào buổi sáng bác sĩ! Tôi tên là Hoa. Rất vui được gặp bác sĩ. |
+| **Nurse** | Yes, doctor. Good morning! My name is Hoa. Nice to meet you. | Dạ vâng thưa bác sĩ. Chào buổi sáng! Tôi tên là Hoa. Rất vui được gặp bác sĩ. |
 | **Doctor** | Nice to meet you too, Hoa. How long have you been working here? | Tôi cũng rất vui được gặp cô, Hoa. Cô đã làm việc ở đây bao lâu rồi? |
 | **Nurse** | I have been working in this Pediatrics department for three years. | Tôi đã làm việc tại khoa Nhi này được ba năm rồi ạ. |
-| **Doctor** | Great. Let's work together to check on the patients today. | Tuyệt vời. Chúng ta cùng phối hợp đi buồng kiểm tra bệnh nhân hôm nay nhé. |
-| **Nurse** | Yes, doctor. I am ready. | Dạ vâng thưa bác sĩ. Tôi đã sẵn sàng rồi. |
+| **Doctor** | Three years — that's great. So you know the patients here well? | Ba năm — tuyệt vời. Vậy cô nắm rõ tình hình bệnh nhân ở đây rồi nhỉ? |
+| **Nurse** | Yes, I do. We have fifteen young patients in the ward right now. I can give you a brief update on each one. | Dạ vâng ạ. Hiện tại chúng tôi có mười lăm bệnh nhi trong khoa. Tôi có thể cập nhật sơ lược từng bệnh nhân cho bác sĩ. |
+| **Doctor** | That would be very helpful. Let's do that before we start the rounds. | Điều đó rất hữu ích. Chúng ta làm điều đó trước khi bắt đầu đi buồng nhé. |
+| **Nurse** | Of course, doctor. Let me get the patient files. I will be right back. | Dạ tất nhiên ạ. Để tôi lấy hồ sơ bệnh nhân. Tôi sẽ quay lại ngay. |
+| **Doctor** | Thank you, Hoa. I can already tell we will make a good team. | Cảm ơn Hoa. Tôi có thể thấy ngay rằng chúng ta sẽ hợp tác tốt với nhau. |
+| **Nurse** | Thank you, doctor. I am happy to work with you. | Cảm ơn bác sĩ. Tôi rất vui được làm việc cùng bác sĩ. |
 
 ---
 
