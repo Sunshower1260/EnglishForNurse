@@ -54,7 +54,7 @@
                 <span class="gradient-text">Chuyên Ngành Y Tá</span>
             </h1>
             <p class="hero-subtitle fade-in">
-                Từ <strong>zero</strong> đến giao tiếp tự tin với bệnh nhân quốc tế.<br>
+                <span id="typing-target" data-text="Từ zero đến giao tiếp tự tin với bệnh nhân quốc tế.">Từ zero đến giao tiếp tự tin với bệnh nhân quốc tế.</span><br>
                 Lộ trình chi tiết bao gồm <strong>Nghe — Nói — Từ vựng</strong> cho đời thường & chuyên ngành y tế.
             </p>
             <div class="hero-stats fade-in">
@@ -85,7 +85,7 @@
         </div>
     </section>
 
-    <!-- ===== OVERVIEW SECTION ===== -->
+    <!-- ===== OVERVIEW SECTION with DASHBOARD ===== -->
     <section class="section" id="overview">
         <div class="container">
             <div class="section-header">
@@ -93,6 +93,12 @@
                 <h2 class="section-title">Cấu Trúc <span class="gradient-text">Lộ Trình</span></h2>
                 <p class="section-subtitle">Hai chuyên mục song song — học cả đời thường lẫn chuyên ngành để giao tiếp toàn diện</p>
             </div>
+
+            <!-- Live Dashboard (Item 6) -->
+            <div id="dashboard-container">
+                <!-- Dynamically rendered by renderer.js -->
+            </div>
+
             <div class="overview-grid">
                 <div class="overview-card overview-card-daily">
                     <div class="overview-card-icon">🌍</div>
@@ -145,7 +151,7 @@
                 <p class="section-subtitle">Từ bảng chữ cái đến giao tiếp tự tin trong mọi tình huống hàng ngày</p>
             </div>
             <div id="daily-phases-container">
-                <!-- Dynamically rendered by renderer.js -->
+                <!-- Dynamically rendered by renderer.js (includes search bar) -->
             </div>
         </div>
     </section>
@@ -159,7 +165,7 @@
                 <p class="section-subtitle">Từ vựng y khoa, giao tiếp với bệnh nhân quốc tế, và xử lý tình huống lâm sàng</p>
             </div>
             <div id="medical-phases-container">
-                <!-- Dynamically rendered by renderer.js -->
+                <!-- Dynamically rendered by renderer.js (includes search bar) -->
             </div>
         </div>
     </section>
@@ -243,10 +249,32 @@
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
     </button>
 
+    <!-- ===== MOBILE BOTTOM NAV (Item 8) ===== -->
+    <nav class="bottom-nav" id="bottom-nav">
+        <div class="bottom-nav-items">
+            <a href="#overview" class="bottom-nav-item">
+                <span class="bottom-nav-icon">📋</span>
+                <span>Tổng Quan</span>
+            </a>
+            <a href="#daily-english" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🌍</span>
+                <span>Đời Thường</span>
+            </a>
+            <a href="#medical-english" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🏥</span>
+                <span>Y Tế</span>
+            </a>
+            <a href="#study-tips" class="bottom-nav-item">
+                <span class="bottom-nav-icon">💡</span>
+                <span>Mẹo Học</span>
+            </a>
+        </div>
+    </nav>
+
     <!-- JS Files -->
-    <script src="js/data-daily.js?v=1.0.2"></script>
-    <script src="js/data-medical.js?v=1.0.2"></script>
-    <script src="js/renderer.js?v=1.0.2"></script>
-    <script src="js/app.js?v=1.0.2"></script>
+    <script src="js/data-daily.js?v=2.0.0"></script>
+    <script src="js/data-medical.js?v=2.0.0"></script>
+    <script src="js/renderer.js?v=2.0.0"></script>
+    <script src="js/app.js?v=2.0.0"></script>
 </body>
 </html>

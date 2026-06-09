@@ -34,6 +34,44 @@
     100% { background-position: 200% center; }
 }
 
+/* --- Typing cursor blink --- */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* --- Gradient border rotation --- */
+@keyframes borderRotate {
+    0% { --angle: 0deg; }
+    100% { --angle: 360deg; }
+}
+
+/* --- Progress ring fill --- */
+@keyframes progressFill {
+    from { stroke-dashoffset: var(--circumference, 282.7); }
+    to { stroke-dashoffset: var(--dash-offset, 282.7); }
+}
+
+/* --- Count up pulse --- */
+@keyframes countPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); color: var(--accent-2); }
+    100% { transform: scale(1); }
+}
+
+/* --- TTS button ripple --- */
+@keyframes ttsRipple {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); box-shadow: 0 0 0 8px rgba(99, 102, 241, 0); }
+}
+
+/* --- Slide up for bottom nav --- */
+@keyframes slideUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
 .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -69,6 +107,41 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+/* --- Gradient border glow on hover (Item 1) --- */
+.lesson-card {
+    position: relative;
+}
+.lesson-card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1.5px;
+    background: transparent;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+.lesson-card-daily::before {
+    background: linear-gradient(135deg, var(--daily-color), var(--daily-light), var(--accent-2), var(--daily-color));
+    background-size: 300% 300%;
+    animation: shimmer 3s linear infinite;
+}
+.lesson-card-medical::before {
+    background: linear-gradient(135deg, var(--medical-color), var(--medical-light), var(--accent-3), var(--medical-color));
+    background-size: 300% 300%;
+    animation: shimmer 3s linear infinite;
+}
+.lesson-card:hover::before {
+    opacity: 1;
+}
+
 .lesson-card:hover .lesson-icon {
     transform: scale(1.15);
     transition: transform var(--transition-base);
@@ -105,6 +178,29 @@
     animation: pulseGlow 0.8s ease;
 }
 
+/* --- Typing animation (Item 4) --- */
+.typing-text {
+    display: inline;
+    border-right: 2px solid var(--accent-2);
+    animation: blink 0.8s ease-in-out infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.typing-text.done {
+    border-right-color: transparent;
+    animation: none;
+}
+
+/* --- TTS button animation (Item 7) --- */
+.tts-btn.playing {
+    animation: ttsRipple 0.6s ease;
+}
+
+/* --- Phase progress count-up (Item 3) --- */
+.phase-progress-text.counting {
+    animation: countPulse 0.5s ease;
+}
+
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         animation-duration: 0.01ms !important;
@@ -112,4 +208,5 @@
     }
     .hero-orb { animation: none !important; }
     html { scroll-behavior: auto; }
+    .typing-text { border-right: none; }
 }
