@@ -1025,3 +1025,240 @@
         grid-column: 1;
     }
 }
+
+
+/* ===================================================
+   GRAMMAR SECTION — Simple Present Tense & Other
+   =================================================== */
+.grammar-section {
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    background: rgba(139, 92, 246, 0.04);
+    margin-bottom: 2rem;
+}
+
+.grammar-section .modal-section-title {
+    color: #a78bfa;
+    border-bottom-color: rgba(139, 92, 246, 0.2);
+}
+
+.grammar-overview {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    padding: 0.8rem 1rem;
+    background: rgba(139, 92, 246, 0.06);
+    border-radius: var(--radius-sm);
+    border-left: 3px solid #a78bfa;
+}
+
+/* Grammar Structures (3 boxes: Affirmative, Negative, Question) */
+.grammar-structures {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.grammar-structure {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: var(--transition-base);
+}
+
+.grammar-structure:hover {
+    border-color: rgba(139, 92, 246, 0.3);
+    box-shadow: 0 4px 16px rgba(139, 92, 246, 0.08);
+}
+
+.grammar-structure-label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.7rem 1rem;
+    background: rgba(255, 255, 255, 0.04);
+    border-bottom: 1px solid var(--border);
+    color: var(--text-primary);
+}
+
+.grammar-formula {
+    padding: 0.6rem 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-bottom: 1px solid var(--border);
+}
+
+.grammar-formula code {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.88rem;
+    color: #fbbf24;
+    background: rgba(251, 191, 36, 0.08);
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(251, 191, 36, 0.15);
+}
+
+/* Grammar rules */
+.grammar-rules {
+    list-style: none;
+    padding: 0.8rem 1rem;
+    margin: 0;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    background: rgba(255, 255, 255, 0.01);
+}
+
+.grammar-rule {
+    font-size: 0.84rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.grammar-rule::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: #a78bfa;
+    font-weight: 700;
+}
+
+/* Grammar examples */
+.grammar-examples {
+    padding: 0.8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.grammar-example {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 0.2rem 0.6rem;
+    align-items: center;
+    padding: 0.5rem 0.6rem;
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.02);
+    transition: var(--transition-fast);
+}
+
+.grammar-example:hover {
+    background: rgba(139, 92, 246, 0.06);
+}
+
+.grammar-ex-en {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.grammar-example .tts-btn {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.grammar-ex-vi {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-style: italic;
+    grid-row: 2;
+    grid-column: 1 / -1;
+}
+
+/* Signal Words */
+.grammar-signal-words-block {
+    margin-bottom: 1.2rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+}
+
+.grammar-signal-title {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.8rem;
+}
+
+.grammar-signal-words {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.grammar-signal-word {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.4rem 0.8rem;
+    background: rgba(139, 92, 246, 0.08);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    border-radius: var(--radius-full);
+    gap: 0.1rem;
+}
+
+.grammar-signal-word strong {
+    font-size: 0.82rem;
+    color: #a78bfa;
+    font-weight: 600;
+}
+
+.grammar-signal-vi {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* Clinical Note */
+.grammar-clinical-note {
+    display: flex;
+    gap: 0.7rem;
+    align-items: flex-start;
+    padding: 0.9rem 1rem;
+    background: rgba(16, 185, 129, 0.06);
+    border: 1px solid rgba(16, 185, 129, 0.15);
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.grammar-clinical-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    margin-top: 0.05rem;
+}
+
+/* Grammar skill badge */
+.skill-badge-grammar {
+    color: #a78bfa;
+    border-color: rgba(167, 139, 250, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .grammar-signal-words {
+        gap: 0.4rem;
+    }
+    .grammar-example {
+        grid-template-columns: 1fr;
+    }
+    .grammar-example .tts-btn {
+        grid-row: 2;
+        grid-column: 1;
+        justify-self: start;
+    }
+    .grammar-ex-vi {
+        grid-row: 3;
+    }
+}
