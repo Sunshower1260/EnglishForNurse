@@ -1,4 +1,4 @@
-/*
+﻿/*
  * RENDERER.JS — Renders lessons from data into the DOM
  * Handles: phases, lesson cards, modal content, dashboard, search, TTS
  */
@@ -51,7 +51,7 @@ const Renderer = {
   renderLessonCard(lesson, color, index) {
     const done = Progress.isCompleted(lesson.id);
     const skillBadges = (lesson.skills || []).map(s => {
-      const labels = {listening:'🎧 Nghe', speaking:'🗣️ Nói', vocabulary:'📚 Từ vựng', reading:'📖 Đọc'};
+      const labels = {listening:'🎧 Nghe', speaking:'🗣️ Nói', vocabulary:'📚 Từ vựng', reading:'📖 Đọc', grammar:'📝 Ngữ pháp'};
       return `<span class="skill-badge skill-badge-${s}">${labels[s] || s}</span>`;
     }).join('');
 
@@ -81,7 +81,7 @@ const Renderer = {
   renderModal(lesson, sectionColor) {
     const done = Progress.isCompleted(lesson.id);
     const skillBadges = (lesson.skills || []).map(s => {
-      const labels = {listening:'🎧 Nghe', speaking:'🗣️ Nói', vocabulary:'📚 Từ vựng', reading:'📖 Đọc'};
+      const labels = {listening:'🎧 Nghe', speaking:'🗣️ Nói', vocabulary:'📚 Từ vựng', reading:'📖 Đọc', grammar:'📝 Ngữ pháp'};
       return `<span class="modal-meta-item">${labels[s] || s}</span>`;
     }).join('');
 
@@ -111,6 +111,50 @@ const Renderer = {
       `<div class="activity-item"><span class="activity-icon">▸</span>${a}</div>`
     ).join('');
 
+
+    // Render grammar section (Simple Present Tense etc.)
+    const grammarHtml = (() => {
+      const g = lesson.grammar;
+      if (!g) return '';
+      const structuresHtml = (g.structures || []).map(st => {
+        const rulesHtml = (st.rules || []).map(r => `<li class="grammar-rule">${r}</li>`).join('');
+        const examplesHtml = (st.examples || []).map(ex =>
+          `<div class="grammar-example">
+            <span class="grammar-ex-en">${ex.en}</span>
+            <button class="tts-btn" onclick="event.stopPropagation();App.speak('${ex.en.replace(/'/g, "\\'")}');" title="Phát âm">🔊</button>
+            <span class="grammar-ex-vi">→ ${ex.vi}</span>
+          </div>`
+        ).join('');
+        return `
+          <div class="grammar-structure">
+            <div class="grammar-structure-label">${st.label}</div>
+            <div class="grammar-formula"><code>${st.formula}</code></div>
+            ${rulesHtml ? `<ul class="grammar-rules">${rulesHtml}</ul>` : ''}
+            <div class="grammar-examples">${examplesHtml}</div>
+          </div>`;
+      }).join('');
+
+      const signalWordsHtml = (g.signalWords || []).map(sw =>
+        `<span class="grammar-signal-word"><strong>${sw.word}</strong><span class="grammar-signal-vi">${sw.vi}</span></span>`
+      ).join('');
+
+      return `
+        <div class="modal-section grammar-section">
+          <h3 class="modal-section-title">${g.icon || '📖'} ${g.title}</h3>
+          <p class="grammar-overview">${g.overview}</p>
+          <div class="grammar-structures">${structuresHtml}</div>
+          ${signalWordsHtml ? `
+          <div class="grammar-signal-words-block">
+            <div class="grammar-signal-title">⏰ Từ Tín Hiệu (Signal Words)</div>
+            <div class="grammar-signal-words">${signalWordsHtml}</div>
+          </div>` : ''}
+          ${g.clinicalNote ? `
+          <div class="grammar-clinical-note">
+            <span class="grammar-clinical-icon">🏥</span>
+            <span><strong>Ứng dụng y tế:</strong> ${g.clinicalNote}</span>
+          </div>` : ''}
+        </div>`;
+    })();
     // Set modal color class
     const modal = document.querySelector('.modal');
     if (modal) {
@@ -143,6 +187,8 @@ const Renderer = {
           <tbody>${vocabRows}</tbody>
         </table>
       </div>` : ''}
+
+      ${grammarHtml}
 
       ${phraseItems ? `
       <div class="modal-section">

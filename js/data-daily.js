@@ -1,4 +1,4 @@
-/*
+﻿/*
  * ============================================
  * DATA-DAILY.JS — Tiếng Anh Đời Thường
  * ============================================
@@ -108,9 +108,9 @@ const DAILY_ENGLISH = {
           id: 'd4', icon: '👨‍👩‍👧‍👦',
           title: 'Gia Đình & Mối Quan Hệ',
           titleEn: 'Family & Relationships',
-          description: 'Tên gọi các thành viên gia đình, mô tả mối quan hệ.',
-          duration: '1 tuần', skills: ['vocabulary','speaking'],
-          objectives: ['Gọi tên thành viên gia đình','Mô tả gia đình mình','Hỏi về gia đình người khác'],
+          description: 'Tên gọi các thành viên gia đình, mô tả mối quan hệ và sử dụng Thì Hiện Tại Đơn để diễn đạt sự thật, thói quen.',
+          duration: '2 tuần', skills: ['vocabulary','speaking','grammar'],
+          objectives: ['Gọi tên thành viên gia đình','Mô tả gia đình mình','Hỏi về gia đình người khác','Sử dụng Thì Hiện Tại Đơn đúng cấu trúc'],
           vocabulary: [
             {en: 'Parents', vi: 'Bố mẹ', phonetic: '/ˈper.ənts/'},
             {en: 'Sibling', vi: 'Anh chị em', phonetic: '/ˈsɪb.lɪŋ/'},
@@ -119,15 +119,76 @@ const DAILY_ENGLISH = {
             {en: 'Grandparents', vi: 'Ông bà', phonetic: '/ˈɡræn.per.ənts/'},
             {en: 'Relative', vi: 'Họ hàng', phonetic: '/ˈrel.ə.tɪv/'}
           ],
+          grammar: {
+            title: 'Thì Hiện Tại Đơn (Simple Present Tense)',
+            icon: '📖',
+            overview: 'Thì Hiện Tại Đơn diễn tả: sự thật hiển nhiên, thói quen lặp đi lặp lại, hoặc trạng thái tĩnh tại (tính cách, nghề nghiệp, gia đình).',
+            structures: [
+              {
+                label: '✅ Câu khẳng định (Affirmative)',
+                formula: 'S + V (s/es) + ...',
+                rules: [
+                  'Chủ ngữ I / You / We / They: dùng động từ nguyên thể.',
+                  "Chủ ngữ He / She / It: thêm '-s' hoặc '-es' vào động từ.",
+                  "Thêm '-es' với động từ kết thúc bằng: -s, -sh, -ch, -x, -o."
+                ],
+                examples: [
+                  {en: 'I have two sisters.', vi: 'Tôi có hai chị gái.'},
+                  {en: 'She works as a nurse.', vi: 'Cô ấy làm y tá.'},
+                  {en: 'He lives with his parents.', vi: 'Anh ấy sống với bố mẹ.'},
+                  {en: 'My brother teaches English.', vi: 'Anh trai tôi dạy tiếng Anh.'}
+                ]
+              },
+              {
+                label: '❌ Câu phủ định (Negative)',
+                formula: "S + do not (don't) / does not (doesn't) + V + ...",
+                rules: [
+                  "I / You / We / They: dùng 'don't' + động từ nguyên thể.",
+                  "He / She / It: dùng 'doesn't' + động từ nguyên thể (KHÔNG thêm -s/-es)."
+                ],
+                examples: [
+                  {en: "I don't have any brothers.", vi: 'Tôi không có anh trai nào.'},
+                  {en: "She doesn't live near the hospital.", vi: 'Cô ấy không sống gần bệnh viện.'},
+                  {en: "My parents don't speak English.", vi: 'Bố mẹ tôi không nói tiếng Anh.'}
+                ]
+              },
+              {
+                label: '❓ Câu hỏi (Question)',
+                formula: 'Do / Does + S + V + ...?',
+                rules: [
+                  "I / You / We / They: dùng 'Do' đầu câu.",
+                  "He / She / It: dùng 'Does' đầu câu (động từ trở về nguyên thể)."
+                ],
+                examples: [
+                  {en: 'Do you have any siblings?', vi: 'Bạn có anh chị em không?'},
+                  {en: 'Does she work in the ICU?', vi: 'Cô ấy có làm ở ICU không?'},
+                  {en: 'Do your parents live with you?', vi: 'Bố mẹ bạn có sống cùng bạn không?'}
+                ]
+              }
+            ],
+            signalWords: [
+              {word: 'always', vi: 'luôn luôn'},
+              {word: 'usually', vi: 'thường'},
+              {word: 'often', vi: 'thường xuyên'},
+              {word: 'sometimes', vi: 'đôi khi'},
+              {word: 'rarely / seldom', vi: 'hiếm khi'},
+              {word: 'never', vi: 'không bao giờ'},
+              {word: 'every day / week', vi: 'mỗi ngày / tuần'}
+            ],
+            clinicalNote: 'Trong y tế, bạn dùng Thì Hiện Tại Đơn để hỏi thông tin ổn định của bệnh nhân: nghề nghiệp, tình trạng gia đình, thói quen sinh hoạt, bệnh mạn tính.'
+          },
           phrases: [
             {en: 'I have two brothers and one sister.', vi: 'Tôi có hai anh trai và một chị gái.'},
             {en: 'Do you have any children?', vi: 'Bạn có con không?'},
             {en: 'My mother is a teacher.', vi: 'Mẹ tôi là giáo viên.'},
-            {en: 'We are a family of five.', vi: 'Gia đình tôi có 5 người.'}
+            {en: 'We are a family of five.', vi: 'Gia đình tôi có 5 người.'},
+            {en: 'She usually takes care of her parents.', vi: 'Cô ấy thường chăm sóc bố mẹ.'},
+            {en: "Does he live alone?", vi: 'Anh ấy có sống một mình không?'},
+            {en: 'My sister works at a clinic.', vi: 'Chị tôi làm việc tại phòng khám.'}
           ],
-          practice: ['Vẽ sơ đồ gia đình bằng tiếng Anh','Giới thiệu gia đình trong 1 phút','Hỏi 3 người về gia đình họ'],
-          tip: 'Khi chăm sóc bệnh nhân, bạn thường cần hỏi về người thân — luyện chủ đề này rất thực tế!'
-        },
+          practice: ['Vẽ sơ đồ gia đình bằng tiếng Anh','Giới thiệu gia đình trong 1 phút dùng Simple Present','Đặt 5 câu hỏi (Do/Does) về gia đình đồng nghiệp','Viết 10 câu mô tả gia đình bạn dùng đủ 3 dạng: khẳng định, phủ định, câu hỏi'],
+          tip: 'Thì Hiện Tại Đơn là nền tảng của tiếng Anh — dùng nó thật tự nhiên khi nói về gia đình và nghề nghiệp. Nhớ: He/She/It luôn cần thêm -s/-es!'
+        },,
         {
           id: 'd5', icon: '🍎',
           title: 'Thức Ăn & Đồ Uống',
