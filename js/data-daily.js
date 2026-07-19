@@ -188,56 +188,197 @@ const DAILY_ENGLISH = {
           ],
           practice: ['Vẽ sơ đồ gia đình bằng tiếng Anh','Giới thiệu gia đình trong 1 phút dùng Simple Present','Đặt 5 câu hỏi (Do/Does) về gia đình đồng nghiệp','Viết 10 câu mô tả gia đình bạn dùng đủ 3 dạng: khẳng định, phủ định, câu hỏi'],
           tip: 'Thì Hiện Tại Đơn là nền tảng của tiếng Anh — dùng nó thật tự nhiên khi nói về gia đình và nghề nghiệp. Nhớ: He/She/It luôn cần thêm -s/-es!'
-        },,
+        },
         {
           id: 'd5', icon: '🍎',
           title: 'Thức Ăn & Đồ Uống',
           titleEn: 'Food & Drinks',
-          description: 'Tên các món ăn, đồ uống phổ biến và cách diễn đạt sở thích ăn uống.',
-          duration: '1 tuần', skills: ['vocabulary','speaking','listening'],
-          objectives: ['Gọi tên 30+ món ăn và đồ uống','Nói về sở thích ăn uống','Hiểu menu cơ bản bằng tiếng Anh'],
+          description: 'Tên các món ăn, đồ uống phổ biến, cách diễn đạt sở thích ăn uống và hỏi về chế độ ăn của bệnh nhân.',
+          duration: '2 tuần', skills: ['vocabulary','speaking','listening','grammar'],
+          objectives: ['Gọi tên 30+ món ăn và đồ uống','Nói về sở thích ăn uống','Hiểu menu cơ bản bằng tiếng Anh','Phân biệt "like" và "would like" khi giao tiếp lịch sự'],
           vocabulary: [
-            {en: 'Rice', vi: 'Cơm', phonetic: '/raɪs/'},
-            {en: 'Chicken', vi: 'Thịt gà', phonetic: '/ˈtʃɪk.ɪn/'},
-            {en: 'Vegetable', vi: 'Rau', phonetic: '/ˈvedʒ.tə.bəl/'},
-            {en: 'Water', vi: 'Nước', phonetic: '/ˈwɔː.tər/'},
-            {en: 'Coffee', vi: 'Cà phê', phonetic: '/ˈkɒf.i/'},
-            {en: 'Allergic', vi: 'Dị ứng', phonetic: '/əˈlɜː.dʒɪk/'}
+            {en: 'Rice / Noodle / Bread', vi: 'Cơm / Mì / Bánh mì', phonetic: '/raɪs/ /ˈnuː.dəl/ /bred/'},
+            {en: 'Chicken / Beef / Pork', vi: 'Thịt gà / Bò / Heo', phonetic: '/ˈtʃɪk.ɪn/ /biːf/ /pɔːrk/'},
+            {en: 'Vegetable / Fruit', vi: 'Rau củ / Trái cây', phonetic: '/ˈvedʒ.tə.bəl/ /fruːt/'},
+            {en: 'Water / Juice / Milk', vi: 'Nước / Nước ép / Sữa', phonetic: '/ˈwɔː.tər/ /dʒuːs/ /mɪlk/'},
+            {en: 'Allergic to', vi: 'Dị ứng với', phonetic: '/əˈlɜː.dʒɪk/'},
+            {en: 'Diet / Low-salt / Low-sugar', vi: 'Chế độ ăn / Ít muối / Ít đường', phonetic: '/ˈdaɪ.ət/'},
+            {en: 'Spicy / Sweet / Sour / Bitter', vi: 'Cay / Ngọt / Chua / Đắng', phonetic: '/ˈspaɪ.si/ /swiːt/ /saʊər/ /ˈbɪt.ər/'},
+            {en: 'Portion / Serving', vi: 'Khẩu phần', phonetic: '/ˈpɔːr.ʃən/ /ˈsɜːr.vɪŋ/'}
           ],
+          grammar: {
+            title: '"Like" vs "Would Like" — Thích & Muốn',
+            icon: '💬',
+            overview: 'Đây là điểm ngữ pháp nhỏ nhưng cực kỳ thực dụng: "like" diễn tả sở thích chung (thì hiện tại đơn), còn "would like" là cách nói lịch sự để yêu cầu hoặc đề nghị điều gì đó ngay lúc này.',
+            structures: [
+              {
+                label: '✅ LIKE — Sở thích (General)',
+                formula: 'S + like(s) + N / V-ing',
+                rules: [
+                  'Dùng để nói về sở thích thông thường, lặp đi lặp lại.',
+                  "He/She/It: dùng 'likes' (thêm -s theo quy tắc Simple Present).",
+                  'Sau "like" có thể là danh từ hoặc động từ thêm -ing.'
+                ],
+                examples: [
+                  {en: 'I like rice and vegetables.', vi: 'Tôi thích cơm và rau.'},
+                  {en: 'She likes drinking coffee in the morning.', vi: 'Cô ấy thích uống cà phê buổi sáng.'},
+                  {en: 'Do you like spicy food?', vi: 'Bạn có thích đồ ăn cay không?'}
+                ]
+              },
+              {
+                label: '🙏 WOULD LIKE — Lịch sự (Polite Request)',
+                formula: "S + would like + N  /  S + would like + to + V",
+                rules: [
+                  '"Would like" = muốn (lịch sự) — dùng khi yêu cầu hoặc đề nghị điều gì đó ngay lúc này.',
+                  "Rút gọn: I'd like / She'd like / They'd like.",
+                  'KHÔNG thêm -s vào "would like" dù chủ ngữ là He/She/It.'
+                ],
+                examples: [
+                  {en: "I'd like some water, please.", vi: 'Cho tôi xin nước, cảm ơn.'},
+                  {en: "The patient would like to eat soft food.", vi: 'Bệnh nhân muốn ăn đồ mềm.'},
+                  {en: "Would you like some soup?", vi: 'Bạn có muốn dùng súp không?'}
+                ]
+              },
+              {
+                label: '🔄 So sánh nhanh',
+                formula: 'Like ≠ Would like',
+                rules: [
+                  '"I like coffee." → Tôi thích cà phê (nói chung, mọi lúc).',
+                  '"I would like coffee." → Tôi muốn (một ly) cà phê bây giờ.',
+                  'Trong bệnh viện: luôn dùng "would like" khi hỏi/đề nghị với bệnh nhân — lịch sự hơn!'
+                ],
+                examples: [
+                  {en: 'Do you like chicken? (general)', vi: 'Bạn có thích gà không? (sở thích chung)'},
+                  {en: 'Would you like chicken for lunch? (now)', vi: 'Bạn có muốn ăn gà cho bữa trưa không? (bây giờ)'},
+                  {en: "Are you allergic to any food?", vi: 'Bạn có dị ứng thức ăn nào không?'}
+                ]
+              }
+            ],
+            signalWords: [
+              {word: 'like + V-ing', vi: 'thích làm gì (chung)'},
+              {word: "would like + to V", vi: 'muốn làm gì (bây giờ)'},
+              {word: "I'd like", vi: "rút gọn của 'I would like'"},
+              {word: 'Would you like...?', vi: 'Bạn có muốn...? (lịch sự)'}
+            ],
+            clinicalNote: 'Trong y tế, luôn hỏi bệnh nhân bằng "Would you like...?" thay vì "Do you want...?" — nghe chuyên nghiệp và ân cần hơn rất nhiều.'
+          },
           phrases: [
-            {en: 'I would like some water, please.', vi: 'Cho tôi xin nước.'},
+            {en: "I'd like some water, please.", vi: 'Cho tôi xin nước, cảm ơn.'},
             {en: 'Are you allergic to any food?', vi: 'Bạn có dị ứng thức ăn nào không?'},
+            {en: 'Would you like something to eat?', vi: 'Bạn có muốn ăn gì không?'},
             {en: 'I prefer chicken over beef.', vi: 'Tôi thích gà hơn bò.'},
-            {en: 'What would you like to eat?', vi: 'Bạn muốn ăn gì?'}
+            {en: 'The patient is on a low-salt diet.', vi: 'Bệnh nhân đang theo chế độ ăn ít muối.'},
+            {en: 'Do you like spicy food?', vi: 'Bạn có thích đồ cay không?'},
+            {en: 'She does not eat pork for religious reasons.', vi: 'Cô ấy không ăn thịt heo vì lý do tôn giáo.'}
           ],
-          practice: ['Gọi tên đồ ăn trong bữa cơm bằng tiếng Anh','Tập gọi món tại quán ăn','Hỏi bệnh nhân về chế độ ăn kiêng'],
-          tip: 'Y tá cần hỏi bệnh nhân về dị ứng thức ăn — học từ "allergic" thật kỹ!'
-        },
-        {
+          practice: ['So sánh "like" và "would like": viết 5 câu mỗi loại','Tập hỏi bệnh nhân về chế độ ăn dùng "Would you like...?"','Gọi tên đồ ăn trong bữa cơm bằng tiếng Anh','Đóng vai y tá ghi nhận dị ứng thức ăn của bệnh nhân mới nhập viện'],
+          tip: '"Would like" là "vũ khí lịch sự" trong giao tiếp y tế — dùng nó mỗi khi hỏi hoặc đề nghị điều gì với bệnh nhân thay cho "want"!'
+        },        {
           id: 'd6', icon: '🏠',
           title: 'Các Hoạt Động Hàng Ngày',
           titleEn: 'Daily Routines & Activities',
-          description: 'Mô tả thói quen hàng ngày: thức dậy, đi làm, ăn uống, ngủ.',
-          duration: '1 tuần', skills: ['speaking','vocabulary'],
-          objectives: ['Mô tả lịch trình ngày thường','Dùng thì hiện tại đơn cơ bản','Hỏi người khác về thói quen'],
+          description: 'Mô tả thói quen hàng ngày hiện tại và kể lại những gì đã xảy ra trong quá khứ bằng Thì Quá Khứ Đơn.',
+          duration: '2 tuần', skills: ['speaking','vocabulary','grammar'],
+          objectives: ['Mô tả lịch trình ngày thường (Simple Present)','Kể lại ngày hôm qua bằng Simple Past','Chia động từ quá khứ đúng dạng','Hỏi người khác về những việc đã làm'],
           vocabulary: [
-            {en: 'Wake up', vi: 'Thức dậy', phonetic: '/weɪk ʌp/'},
-            {en: 'Go to work', vi: 'Đi làm', phonetic: '/ɡoʊ tə wɜːrk/'},
-            {en: 'Take a shower', vi: 'Tắm', phonetic: '/teɪk ə ˈʃaʊ.ər/'},
-            {en: 'Have breakfast', vi: 'Ăn sáng', phonetic: '/hæv ˈbrek.fəst/'},
-            {en: 'Go to bed', vi: 'Đi ngủ', phonetic: '/ɡoʊ tə bed/'},
-            {en: 'Exercise', vi: 'Tập thể dục', phonetic: '/ˈek.sər.saɪz/'}
+            {en: 'Wake up / Woke up', vi: 'Thức dậy (HT) / (QK)', phonetic: '/weɪk ʌp/ /woʊk ʌp/'},
+            {en: 'Go / Went to work', vi: 'Đi làm (HT) / (QK)', phonetic: '/ɡoʊ/ /went/'},
+            {en: 'Take / Took a shower', vi: 'Tắm (HT) / (QK)', phonetic: '/teɪk/ /tʊk/'},
+            {en: 'Have / Had breakfast', vi: 'Ăn sáng (HT) / (QK)', phonetic: '/hæv/ /hæd/'},
+            {en: 'Go / Went to bed', vi: 'Đi ngủ (HT) / (QK)', phonetic: '/ɡoʊ/ /went/'},
+            {en: 'Check / Checked vitals', vi: 'Kiểm tra sinh hiệu (HT) / (QK)', phonetic: '/tʃek/ /tʃekt/'},
+            {en: 'Administer / Administered', vi: 'Cho thuốc (HT) / (QK)', phonetic: '/ədˈmɪn.ɪ.stər/'},
+            {en: 'Yesterday / Last night', vi: 'Hôm qua / Tối qua', phonetic: '/ˈjes.tər.deɪ/'}
           ],
+          grammar: {
+            title: 'Thì Quá Khứ Đơn (Simple Past Tense)',
+            icon: '⏰',
+            overview: 'Thì Quá Khứ Đơn dùng để kể lại hành động đã hoàn toàn kết thúc trong quá khứ — tại một thời điểm xác định. Trong y tế, dùng để báo cáo ca trực, ghi nhận sự kiện lâm sàng đã xảy ra.',
+            structures: [
+              {
+                label: '✅ Câu khẳng định (Affirmative)',
+                formula: 'S + V-ed (regular) / V2 (irregular) + ...',
+                rules: [
+                  'Động từ có quy tắc (Regular): thêm -ed vào cuối. Ví dụ: work → worked, check → checked.',
+                  'Động từ bất quy tắc (Irregular): học thuộc dạng V2. Ví dụ: go → went, take → took, have → had.',
+                  'KHÔNG thêm -s/-es dù chủ ngữ là He/She/It — tất cả chủ ngữ dùng cùng một dạng!'
+                ],
+                examples: [
+                  {en: 'I woke up at 5 AM yesterday.', vi: 'Hôm qua tôi dậy lúc 5 giờ sáng.'},
+                  {en: 'She checked the patient\'s vitals at 8 PM.', vi: 'Cô ấy kiểm tra sinh hiệu bệnh nhân lúc 8 giờ tối.'},
+                  {en: 'The nurse administered the medication on time.', vi: 'Y tá đã cho thuốc đúng giờ.'},
+                  {en: 'He went to bed very late last night.', vi: 'Tối qua anh ấy đi ngủ rất muộn.'}
+                ]
+              },
+              {
+                label: '❌ Câu phủ định (Negative)',
+                formula: 'S + did not (didn\'t) + V (nguyên thể) + ...',
+                rules: [
+                  'Tất cả chủ ngữ đều dùng "didn\'t" (không phân biệt I/He/She...).',
+                  'Sau "didn\'t" dùng động từ NGUYÊN THỂ — KHÔNG chia dạng V2 hay thêm -ed.'
+                ],
+                examples: [
+                  {en: "I didn't eat breakfast this morning.", vi: 'Sáng nay tôi không ăn sáng.'},
+                  {en: "She didn't come to work yesterday.", vi: 'Hôm qua cô ấy không đi làm.'},
+                  {en: "The patient didn't sleep well last night.", vi: 'Tối qua bệnh nhân ngủ không ngon.'}
+                ]
+              },
+              {
+                label: '❓ Câu hỏi (Question)',
+                formula: 'Did + S + V (nguyên thể) + ...?',
+                rules: [
+                  'Tất cả chủ ngữ dùng "Did" ở đầu câu.',
+                  'Sau "Did" dùng động từ NGUYÊN THỂ (không chia).',
+                  'Trả lời ngắn: Yes, I/he/she did. — No, I/he/she didn\'t.'
+                ],
+                examples: [
+                  {en: 'Did you take your medication last night?', vi: 'Tối qua bạn có uống thuốc không?'},
+                  {en: 'Did she finish the night shift?', vi: 'Cô ấy có làm hết ca đêm không?'},
+                  {en: 'Did the patient eat this morning?', vi: 'Sáng nay bệnh nhân có ăn không?'}
+                ]
+              },
+              {
+                label: '📋 Động từ bất quy tắc thông dụng (Irregular Verbs)',
+                formula: 'V1 → V2 (phải học thuộc)',
+                rules: [
+                  'go → went (đi)',
+                  'take → took (lấy / tắm)',
+                  'have → had (có / ăn)',
+                  'wake → woke (thức dậy)',
+                  'give → gave (cho)',
+                  'see → saw (khám / gặp)',
+                  'come → came (đến)',
+                  'do → did (làm)'
+                ],
+                examples: [
+                  {en: 'The doctor saw the patient at 9 AM.', vi: 'Bác sĩ khám bệnh nhân lúc 9 giờ sáng.'},
+                  {en: 'I gave the patient 500mg of paracetamol.', vi: 'Tôi cho bệnh nhân uống 500mg paracetamol.'},
+                  {en: 'She came to the hospital by bus.', vi: 'Cô ấy đến bệnh viện bằng xe buýt.'}
+                ]
+              }
+            ],
+            signalWords: [
+              {word: 'yesterday', vi: 'hôm qua'},
+              {word: 'last night / week', vi: 'tối qua / tuần trước'},
+              {word: 'ago', vi: 'trước đây (2 days ago)'},
+              {word: 'in + năm quá khứ', vi: 'in 2020, in 2023'},
+              {word: 'this morning (đã qua)', vi: 'sáng nay (đã xong)'},
+              {word: 'just now', vi: 'vừa mới xong'}
+            ],
+            clinicalNote: 'Y tá dùng Simple Past để báo cáo ca trực (shift report): "I checked vitals at 6 AM", "The patient vomited twice last night", "I administered the medication on time." Đây là ngữ pháp cốt lõi của hồ sơ y tế!'
+          },
           phrases: [
-            {en: 'I usually wake up at 6 AM.', vi: 'Tôi thường dậy lúc 6 giờ sáng.'},
-            {en: 'What do you do in the morning?', vi: 'Buổi sáng bạn làm gì?'},
-            {en: 'I work the night shift.', vi: 'Tôi làm ca đêm.'},
-            {en: 'After work, I go home and rest.', vi: 'Sau giờ làm, tôi về nhà nghỉ ngơi.'}
+            {en: 'I usually wake up at 6 AM.', vi: 'Tôi thường dậy lúc 6 giờ sáng. (thói quen)'},
+            {en: 'Yesterday, I woke up at 5 AM.', vi: 'Hôm qua tôi dậy lúc 5 giờ sáng. (quá khứ)'},
+            {en: 'I checked the patient\'s vitals this morning.', vi: 'Sáng nay tôi kiểm tra sinh hiệu bệnh nhân.'},
+            {en: 'She didn\'t take her medication last night.', vi: 'Tối qua cô ấy không uống thuốc.'},
+            {en: 'Did the patient sleep well?', vi: 'Bệnh nhân có ngủ ngon không?'},
+            {en: 'The doctor came and examined the patient at noon.', vi: 'Bác sĩ đến và khám bệnh nhân lúc trưa.'},
+            {en: 'I worked the night shift and finished at 7 AM.', vi: 'Tôi làm ca đêm và kết thúc lúc 7 giờ sáng.'}
           ],
-          practice: ['Mô tả một ngày làm việc của bạn','Hỏi đồng nghiệp về thói quen sáng','Viết 7 câu về lịch trình hàng ngày'],
-          tip: 'Tập nói thói quen giúp bạn quen cấu trúc câu cơ bản I + verb mỗi ngày.'
-        },
-        {
+          practice: ['Kể lại ngày hôm qua bằng 7 câu Simple Past','Viết báo cáo ca trực ngắn 3 câu bằng tiếng Anh','Phân biệt: chia động từ đúng (present vs past) trong 10 câu','Flashcard 20 cặp động từ bất quy tắc thông dụng','Đóng vai y tá báo cáo ca cho đồng nghiệp lúc giao ca'],
+          tip: 'Mẹo nhớ: Simple Past = XONG RỒI. Hỏi mình: "Việc này đã hoàn toàn kết thúc chưa?" — nếu rồi, dùng V-ed hoặc V2. Và nhớ: "didn\'t" + nguyên thể, đừng bao giờ viết "didn\'t went"!'
+        },  {
           id: 'd7', icon: '❓',
           title: 'Đặt Câu Hỏi Cơ Bản',
           titleEn: 'Basic Questions (Wh-Questions)',
